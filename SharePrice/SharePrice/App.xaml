@@ -3,5 +3,16 @@
                         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                         xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms"
                         x:Class="SharePrice.App">
-
+  <Application.Resources>
+    <ResourceDictionary>      
+      <Style x:Key="TabbedStyle" TargetType="TabbedPage">
+        <Setter Property="BarTextColor" Value="#007575"/>
+        <Setter Property="BarBackgroundColor" Value="#FFFFFF"/>
+      </Style>
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="#00d2d2"/>
+        <Setter Property="BarTextColor" Value="White"/>
+      </Style>
+    </ResourceDictionary>
+  </Application.Resources>
 </prism:PrismApplication>

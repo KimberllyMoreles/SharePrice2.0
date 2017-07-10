@@ -13,13 +13,17 @@ namespace SharePrice
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("NavigationPage/LoginPage");
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<LoginPage>();
+            Container.RegisterTypeForNavigation<InicioPage>();
+            Container.RegisterTypeForNavigation<ComercioPage>();
+            Container.RegisterTypeForNavigation<UsuariosPage>();
         }
     }
 }
