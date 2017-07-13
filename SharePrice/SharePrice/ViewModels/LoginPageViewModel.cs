@@ -11,6 +11,14 @@ namespace SharePrice.ViewModels
     public class LoginPageViewModel : BaseViewModel
     {
         IEventAggregator _ea { get; }
+
+        private string _titulo;
+        public string Titulo
+        {
+            get { return _titulo; }
+            set { SetProperty(ref _titulo, value); }
+        }
+
         public LoginPageViewModel(IEventAggregator eventAggregator)
         {
             _ea = eventAggregator;
@@ -21,6 +29,9 @@ namespace SharePrice.ViewModels
         {
             System.Diagnostics.Debug.WriteLine($"{Title} OnNavigatingTo");
             _ea.GetEvent<InitializeTabbedChildrenEvent>().Publish(parameters);
+
+            /*if (parameters.ContainsKey("parametro"))
+                this.Titulo = parameters["parametro"].ToString();*/
         }
         
     }

@@ -5,7 +5,7 @@
             prism:ViewModelLocator.AutowireViewModel="True"            
             xmlns:local="clr-namespace:SharePrice.Views;assembly=SharePrice"
             x:Class="SharePrice.Views.LoginPage"
-            Style="{StaticResource TabbedStyle}"            
+            Style="{StaticResource TabbedStyle}"                
             Title="Share Price">
     <TabbedPage.Children>
         <local:InicioPage Title="Início"/>

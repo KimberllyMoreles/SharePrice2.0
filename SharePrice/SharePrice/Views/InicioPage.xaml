@@ -4,5 +4,5 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.InicioPage">
-  
+    <Label Text="Inicio"/>
 </ContentPage>

@@ -4,13 +4,18 @@
                         xmlns:prism="clr-namespace:Prism.DryIoc;assembly=Prism.DryIoc.Forms"
                         x:Class="SharePrice.App">
   <Application.Resources>
-    <ResourceDictionary>      
+    <ResourceDictionary>
+      
+      <Color x:Key="VerdeClaro">#BADDDA</Color>
+      <Color x:Key="VerdeMedio">#00d2d2</Color>
+      <Color x:Key="VerdeEscuro">#007575</Color>
+      
       <Style x:Key="TabbedStyle" TargetType="TabbedPage">
-        <Setter Property="BarTextColor" Value="#007575"/>
-        <Setter Property="BarBackgroundColor" Value="#FFFFFF"/>
+        <Setter Property="BarTextColor" Value="{StaticResource VerdeEscuro}"/>
+        <Setter Property="BarBackgroundColor" Value="White"/>      
       </Style>
       <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="#00d2d2"/>
+        <Setter Property="BarBackgroundColor" Value="{StaticResource VerdeMedio}"/>
         <Setter Property="BarTextColor" Value="White"/>
       </Style>
     </ResourceDictionary>
