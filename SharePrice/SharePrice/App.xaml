@@ -6,17 +6,57 @@
   <Application.Resources>
     <ResourceDictionary>
       
+      <!--Cores utilizadas na aplicação-->
       <Color x:Key="VerdeClaro">#BADDDA</Color>
       <Color x:Key="VerdeMedio">#00d2d2</Color>
       <Color x:Key="VerdeEscuro">#007575</Color>
+         
+      <!--Estilo de cores utilizado na NavigationPage da aplicação-->
+      <Style TargetType="NavigationPage">
+        <Setter Property="BarBackgroundColor" Value="{StaticResource VerdeMedio}"/>
+        <Setter Property="BarTextColor" Value="White"/>      
+        <Setter Property="BackgroundColor" Value="White"/>     
+      </Style>   
       
+      <!--Estilo de cores utilizado na TabbedPage do layout LoginPage-->
       <Style x:Key="TabbedStyle" TargetType="TabbedPage">
         <Setter Property="BarTextColor" Value="{StaticResource VerdeEscuro}"/>
         <Setter Property="BarBackgroundColor" Value="White"/>      
+      </Style>   
+      
+      <!--Estilo para a orientação horizontal das StackLayouts-->
+      <Style x:Key="StackLayoutHorizontal" TargetType="StackLayout">
+        <Setter Property="Orientation" Value="Horizontal"/>
+        <Setter Property="HorizontalOptions" Value="Center"/>      
       </Style>
-      <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="{StaticResource VerdeMedio}"/>
-        <Setter Property="BarTextColor" Value="White"/>
+      
+      <!--Estilo para a orientação, margens, largura e altura para os botões de SocialLogin-->
+      <Style x:Key="SocialButton" TargetType="Button">
+        <Setter Property="HorizontalOptions" Value="Center"/>
+        <Setter Property="Margin">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="Thickness"
+                        Android="40"
+                        iOS="40"
+                        WinPhone="45"/>
+          </Setter.Value>
+        </Setter>        
+        <Setter Property="WidthRequest">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double" 
+                        Android="32"
+                        iOS="32"
+                        WinPhone="64"/>      
+          </Setter.Value>
+        </Setter>        
+        <Setter Property="HeightRequest">
+          <Setter.Value>      
+            <OnPlatform x:TypeArguments="x:Double" 
+                        Android="32"
+                        iOS="32"
+                        WinPhone="64"/>            
+          </Setter.Value>
+        </Setter>
       </Style>
     </ResourceDictionary>
   </Application.Resources>

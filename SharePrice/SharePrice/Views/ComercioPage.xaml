@@ -4,5 +4,26 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.ComercioPage">
-    <Label Text="Comercio"/>
+    <StackLayout>
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
+            <Image>
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource"
+                                Android="Resources/drawable/logo.png"
+                                iOS="Resources/logo.png"
+                                WinPhone="Assets/logo.png"/>
+                </Image.Source>
+            </Image>
+        </StackLayout>
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
+            <Button Style="{StaticResource SocialButton}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                            Android="Resources/drawable/google.png"
+                            iOS="Resources/google.png"
+                            WinPhone="Assets/google.png"/>
+                </Button.Image>
+            </Button>
+        </StackLayout> 
+    </StackLayout>   
 </ContentPage>
