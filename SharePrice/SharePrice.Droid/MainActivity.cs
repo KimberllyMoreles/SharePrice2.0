@@ -22,6 +22,9 @@ namespace SharePrice.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
+
+            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

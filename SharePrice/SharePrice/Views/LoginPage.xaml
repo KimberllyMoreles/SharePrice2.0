@@ -1,15 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
-            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-            prism:ViewModelLocator.AutowireViewModel="True"            
-            xmlns:local="clr-namespace:SharePrice.Views;assembly=SharePrice"
-            x:Class="SharePrice.Views.LoginPage"
-            Style="{StaticResource TabbedStyle}"                
-            Title="Share Price">
-    <TabbedPage.Children>
-        <local:InicioPage Title="Início"/>
-        <local:UsuariosPage Title="Usuários"/>
-        <local:ComercioPage Title="Comércio"/>
-    </TabbedPage.Children>
-</TabbedPage>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SharePrice.Views.LoginPage">
+    <StackLayout>
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
+            <Image>
+                <Image.Source>
+                    <OnPlatform x:TypeArguments="ImageSource"
+                                Android="Resources/drawable/logo.png"
+                                iOS="Resources/logo.png"
+                                WinPhone="Assets/logo.png"/>
+                </Image.Source>
+            </Image>
+        </StackLayout>
+
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
+            <Button Style="{StaticResource TinyButton}" Command="{Binding LoginFacebookCommand}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/facebook.png"
+                        iOS="Resources/facebook.png"
+                        WinPhone="Assets/facebook.png"/>
+                </Button.Image>
+            </Button>
+
+            <Button Style="{StaticResource TinyButton}" Command="{Binding LoginGoogleCommand}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/google.png"
+                        iOS="Resources/google.png"
+                        WinPhone="Assets/google.png"/>
+                </Button.Image>
+            </Button>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>

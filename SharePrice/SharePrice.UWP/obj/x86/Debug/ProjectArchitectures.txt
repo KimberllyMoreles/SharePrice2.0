@@ -1,0 +1,2 @@
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\SharePrice.UWP.csproj;x86
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\SharePrice.csproj;neutral

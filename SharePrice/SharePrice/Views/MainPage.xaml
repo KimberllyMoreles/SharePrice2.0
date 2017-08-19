@@ -4,8 +4,35 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.MainPage"
-             Title="MainPage">
-  <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-    <Label Text="{Binding Title}" />
-  </StackLayout>
+             Title="Share Price">
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
+            <Button Style="{StaticResource TinyButton}" >
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/facebook.png"
+                        iOS="Resources/facebook.png"
+                        WinPhone="Assets/facebook.png"/>
+                </Button.Image>
+            </Button>
+
+            <Button Style="{StaticResource TinyButton}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/google.png"
+                        iOS="Resources/google.png"
+                        WinPhone="Assets/google.png"/>
+                </Button.Image>
+            </Button>
+
+            <Button Style="{StaticResource TinyButton}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/google.png"
+                        iOS="Resources/google.png"
+                        WinPhone="Assets/google.png"/>
+                </Button.Image>
+            </Button>
+        </StackLayout>
+    </StackLayout>
 </ContentPage>

@@ -7,11 +7,11 @@
   IgnorableNamespaces="uap mp">
 
   <Identity
-    Name="300c6d4c-c6a3-4107-8ff2-117023108118"
+    Name="84d3fc81-4443-4009-8bab-d9e6df058f1c"
     Publisher="CN=kimmo"
     Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="300c6d4c-c6a3-4107-8ff2-117023108118" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="84d3fc81-4443-4009-8bab-d9e6df058f1c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
     <DisplayName>SharePrice.UWP</DisplayName>

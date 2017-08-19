@@ -13,17 +13,16 @@ namespace SharePrice
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/LoginPage");
+            NavigationService.NavigateAsync("NavigationPage/InitialPage");
         }
 
         protected override void RegisterTypes()
         {
             Container.RegisterTypeForNavigation<NavigationPage>();
             Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<InformationPage>();
+            Container.RegisterTypeForNavigation<InitialPage>();
             Container.RegisterTypeForNavigation<LoginPage>();
-            Container.RegisterTypeForNavigation<InicioPage>();
-            Container.RegisterTypeForNavigation<ComercioPage>();
-            Container.RegisterTypeForNavigation<UsuariosPage>();
         }
     }
 }

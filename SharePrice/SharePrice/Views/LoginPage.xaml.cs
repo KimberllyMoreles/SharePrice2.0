@@ -2,7 +2,7 @@
 
 namespace SharePrice.Views
 {
-    public partial class LoginPage : TabbedPage
+    public partial class LoginPage : ContentPage
     {
         public LoginPage()
         {

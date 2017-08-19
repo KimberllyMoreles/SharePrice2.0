@@ -1,38 +1,63 @@
 ﻿using Prism.Commands;
 using Prism.Mvvm;
-using Prism.Events;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using SharePrice.Events;
+using System.Windows.Input;
+using Xamarin.Forms;
+using System.Threading.Tasks;
+using SharePrice.Helpers;
+using Prism.Navigation;
+using SharePrice.Service;
+using Prism.Services;
 
 namespace SharePrice.ViewModels
 {
     public class LoginPageViewModel : BaseViewModel
     {
-        IEventAggregator _ea { get; }
+        private INavigationService _navigationService;
+        AzureService _azureService;
 
-        private string _titulo;
-        public string Titulo
+        public Command LoginFacebookCommand { get; }
+        public Command LoginGoogleCommand { get; }
+
+        public LoginPageViewModel(INavigationService navigationService, IDependencyService dependencyService)
         {
-            get { return _titulo; }
-            set { SetProperty(ref _titulo, value); }
+            _navigationService = navigationService;
+            _azureService = dependencyService.Get<AzureService>();
+
+            LoginFacebookCommand = new Command(async () => await ExecuteLoginFacebookCommandAsync());
+            LoginGoogleCommand = new Command(async () => await ExecuteLoginGoogleCommandAsync());
         }
 
-        public LoginPageViewModel(IEventAggregator eventAggregator)
+        private async Task ExecuteLoginFacebookCommandAsync()
         {
-            _ea = eventAggregator;
-            Title = "Event Initialized";
+            if (IsBusy || !(await LoginAsync("Facebook")))
+                return;
+            else
+            {
+                await _navigationService?.NavigateAsync("MainPage");
+            }
+
         }
 
-        public override void OnNavigatingTo(Prism.Navigation.NavigationParameters parameters)
+        private async Task ExecuteLoginGoogleCommandAsync()
         {
-            System.Diagnostics.Debug.WriteLine($"{Title} OnNavigatingTo");
-            _ea.GetEvent<InitializeTabbedChildrenEvent>().Publish(parameters);
+            if (IsBusy || !(await LoginAsync("Google")))
+                return;
+            else
+            {
+                await _navigationService?.NavigateAsync("MainPage");
+            }
 
-            /*if (parameters.ContainsKey("parametro"))
-                this.Titulo = parameters["parametro"].ToString();*/
         }
-        
+
+        public Task<bool> LoginAsync(string redeSocial)
+        {
+            if (Settings.IsLoggedIn)
+                return Task.FromResult(true);
+
+            return _azureService.LoginAsync(redeSocial);
+        }
     }
 }
