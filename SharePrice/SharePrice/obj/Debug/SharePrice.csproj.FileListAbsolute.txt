@@ -40,3 +40,4 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Views.LoginPage.xaml.g.cs
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.dll
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Views.AdicionarOfertaPage.xaml.g.cs

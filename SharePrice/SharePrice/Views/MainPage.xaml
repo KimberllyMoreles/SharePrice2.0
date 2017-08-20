@@ -5,32 +5,32 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.MainPage"
              Title="Share Price">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-        <StackLayout Style="{StaticResource StackLayoutHorizontal}">
-            <Button Style="{StaticResource TinyButton}" >
+    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
+        <StackLayout Style="{StaticResource StackLayoutHorizontal}" VerticalOptions="Start">
+            <Button Style="{StaticResource TinyButton}" Command="{Binding LoginFacebookCommand}">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="Resources/drawable/facebook.png"
-                        iOS="Resources/facebook.png"
-                        WinPhone="Assets/facebook.png"/>
+                        Android="Resources/drawable/user.png"
+                        iOS="Resources/user.png"
+                        WinPhone="Assets/user.png"/>
                 </Button.Image>
             </Button>
 
-            <Button Style="{StaticResource TinyButton}">
+            <Button Style="{StaticResource TinyButton}" Command="{Binding AdicionarOfertaPageCommand}">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="Resources/drawable/google.png"
-                        iOS="Resources/google.png"
-                        WinPhone="Assets/google.png"/>
+                        Android="Resources/drawable/add.png"
+                        iOS="Resources/add.png"
+                        WinPhone="Assets/add.png"/>
                 </Button.Image>
             </Button>
 
-            <Button Style="{StaticResource TinyButton}">
+            <Button Style="{StaticResource TinyButton}" Command="{Binding NotificacaoCommand}">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="Resources/drawable/google.png"
-                        iOS="Resources/google.png"
-                        WinPhone="Assets/google.png"/>
+                        Android="Resources/drawable/notification.png"
+                        iOS="Resources/notification.png"
+                        WinPhone="Assets/notification.png"/>
                 </Button.Image>
             </Button>
         </StackLayout>

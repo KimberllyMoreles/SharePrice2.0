@@ -4,21 +4,41 @@ using Prism.Navigation;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Xamarin.Forms;
+using System.Threading.Tasks;
 
 namespace SharePrice.ViewModels
 {
-    public class MainPageViewModel : BindableBase, INavigationAware
+    public class MainPageViewModel : BaseViewModel
     {
-        private string _title;
-        public string Title
+        private INavigationService _navigationService;
+
+        public Command UsuarioPageCommand { get; }
+        public Command AdicionarOfertaPageCommand { get; }
+        public Command NotificacaoCommand { get; }
+
+        public MainPageViewModel(INavigationService navigationService)
         {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
+            _navigationService = navigationService;
+
+            UsuarioPageCommand = new Command(async () => await ExecuteUsuarioPageCommandAsync());
+            AdicionarOfertaPageCommand = new Command(async () => await ExecuteAdicionarOfertaPageCommandAsync());
+            NotificacaoCommand = new Command(async () => await ExecuteNotificacaoCommandAsync());
         }
 
-        public MainPageViewModel()
+        private Task ExecuteNotificacaoCommandAsync()
         {
+            throw new NotImplementedException();
+        }
 
+        private async Task ExecuteAdicionarOfertaPageCommandAsync()
+        {
+            await _navigationService?.NavigateAsync("AdicionarOfertaPage");
+        }
+
+        private async Task ExecuteUsuarioPageCommandAsync()
+        {
+            await _navigationService?.NavigateAsync("MainPage");
         }
 
         public void OnNavigatedFrom(NavigationParameters parameters)
@@ -33,8 +53,7 @@ namespace SharePrice.ViewModels
 
         public void OnNavigatedTo(NavigationParameters parameters)
         {
-            if (parameters.ContainsKey("title"))
-                Title = (string)parameters["title"] + " and Prism";
+            
         }
     }
 }

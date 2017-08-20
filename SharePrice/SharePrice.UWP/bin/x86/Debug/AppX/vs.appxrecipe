@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T21:01:36.118</Modified>
+      <Modified>2017-08-20T03:19:24.206</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.exe">
       <PackagePath>entrypoint\SharePrice.UWP.exe</PackagePath>
-      <Modified>2017-08-18T21:01:28.679</Modified>
+      <Modified>2017-08-20T03:19:23.197</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\DryIoc.dll\2.10.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll">
       <PackagePath>DryIoc.dll</PackagePath>
@@ -557,11 +557,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll">
       <PackagePath>SharePrice.dll</PackagePath>
-      <Modified>2017-08-18T20:34:28.679</Modified>
+      <Modified>2017-08-20T03:19:19.778</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
       <PackagePath>SharePrice.dll.config</PackagePath>
-      <Modified>2017-08-18T20:07:34.896</Modified>
+      <Modified>2017-08-20T01:21:15.326</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\add.png">
+      <PackagePath>Assets\add.png</PackagePath>
+      <Modified>2017-08-20T00:38:42.813</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\facebook.png">
       <PackagePath>Assets\facebook.png</PackagePath>
@@ -574,6 +578,14 @@
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
       <Modified>2017-08-18T20:49:26.926</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\notification.png">
+      <PackagePath>Assets\notification.png</PackagePath>
+      <Modified>2017-08-20T00:38:42.831</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\user.png">
+      <PackagePath>Assets\user.png</PackagePath>
+      <Modified>2017-08-20T00:38:42.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -632,11 +644,11 @@
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T21:01:34.304</Modified>
+      <Modified>2017-08-20T01:50:02.867</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\SharePrice.UWP.exe">
       <PackagePath>SharePrice.UWP.exe</PackagePath>
-      <Modified>2017-08-18T21:01:36.099</Modified>
+      <Modified>2017-08-20T03:19:24.194</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

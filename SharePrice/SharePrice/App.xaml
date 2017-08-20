@@ -59,6 +59,19 @@
         </Setter>
       </Style>
 
+      <!--Estilo para formatar o formulário de adição de ofertas-->
+      <Style x:Key="ConteudoFormatado" TargetType="StackLayout">
+        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+        <Setter Property="VerticalOptions">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="LayoutOptions"
+                        Android="Center"
+                        iOS="Center"
+                        WinPhone="Start"/>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
     </ResourceDictionary>
   </Application.Resources>
 </prism:PrismApplication>

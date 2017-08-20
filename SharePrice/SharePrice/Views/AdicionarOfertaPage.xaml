@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="SharePrice.Views.AdicionarOfertaPage"
+             Title="Adicionar Oferta">
+    <StackLayout Style="{StaticResource ConteudoFormatado}">
+        <Entry Placeholder="Produto" WidthRequest="300"></Entry>
+        <Picker></Picker>
+        <Entry Placeholder="Local de Venda"></Entry>
+        <DatePicker></DatePicker>
+        <Entry Placeholder="Preço"></Entry>
+        <Button Text="OK"/>
+    </StackLayout>
+</ContentPage>

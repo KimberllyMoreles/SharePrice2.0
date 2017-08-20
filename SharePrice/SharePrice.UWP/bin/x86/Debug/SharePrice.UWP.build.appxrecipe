@@ -421,6 +421,9 @@
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
       <PackagePath>SharePrice.dll.config</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\add.png">
+      <PackagePath>Assets\add.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\facebook.png">
       <PackagePath>Assets\facebook.png</PackagePath>
     </AppxPackagedFile>
@@ -429,6 +432,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\notification.png">
+      <PackagePath>Assets\notification.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\user.png">
+      <PackagePath>Assets\user.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
