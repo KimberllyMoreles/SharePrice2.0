@@ -1,4 +1,3 @@
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\SharePrice.Droid.csprojResolveAssemblyReference.cache
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\SharePrice.Droid.dll.config
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\SharePrice.Droid.dll
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\SharePrice.Droid.pdb
@@ -48,6 +47,7 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\Xamarin.Forms.Platform.Android.pdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\Xamarin.Forms.Xaml.pdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\Xamarin.Forms.Xaml.xml
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\SharePrice.Droid.csprojResolveAssemblyReference.cache
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\SharePrice.Droid.dll
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\SharePrice.Droid.pdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\android\bin\SharePrice.Droid.apk
@@ -60,6 +60,12 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\values\colors.xml
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\values\styles.xml
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\values-v21\styles.xml
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\facebook.png
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\google.png
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\logo.png
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\add.png
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\notification.png
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\user.png
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\R.cs.flag
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\uploadflags.txt
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Debug\SharePrice.dll.mdb
@@ -74,9 +80,3 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\facebook.png
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\google.png
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\logo.png
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\add.png
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\notification.png
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\user.png

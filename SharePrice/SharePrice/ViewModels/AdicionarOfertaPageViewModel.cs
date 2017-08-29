@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace SharePrice.ViewModels
 {
-    public class AdicionarOfertaPageViewModel : BindableBase
+    public class AdicionarOfertaPageViewModel : BaseViewModel
     {
         public AdicionarOfertaPageViewModel()
         {

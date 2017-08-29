@@ -13,26 +13,49 @@
 
       <!--Estilo de cores utilizado na NavigationPage da aplicação-->
       <Style TargetType="NavigationPage">
-        <Setter Property="BarBackgroundColor" Value="{StaticResource VerdeMedio}"/>
-        <Setter Property="BarTextColor" Value="White"/>
-        <Setter Property="BackgroundColor" Value="White"/>
+        <Setter Property="BarBackgroundColor" 
+                Value="{StaticResource VerdeMedio}"/>
+        <Setter Property="BarTextColor" 
+                Value="White"/>
+        <Setter Property="BackgroundColor" 
+                Value="White"/>
       </Style>
 
       <!--Estilo de cores utilizado na TabbedPage do layout LoginPage-->
-      <Style x:Key="TabbedStyle" TargetType="TabbedPage">
-        <Setter Property="BarTextColor" Value="{StaticResource VerdeEscuro}"/>
-        <Setter Property="BarBackgroundColor" Value="White"/>
+      <Style x:Key="TabbedStyle" 
+             TargetType="TabbedPage">
+        <Setter Property="BarTextColor" 
+                Value="{StaticResource VerdeEscuro}"/>
+        <Setter Property="BarBackgroundColor" 
+                Value="White"/>
       </Style>
 
       <!--Estilo para a orientação horizontal das StackLayouts-->
-      <Style x:Key="StackLayoutHorizontal" TargetType="StackLayout">
-        <Setter Property="Orientation" Value="Horizontal"/>
-        <Setter Property="HorizontalOptions" Value="Center"/>
+      <Style x:Key="StackLayoutHorizontal" 
+             TargetType="StackLayout">
+        <Setter Property="Orientation" 
+                Value="Horizontal"/>
+        <Setter Property="HorizontalOptions" 
+                Value="Center"/>
+      </Style>
+      
+      <Style x:Key="StackLayoutHorizontalFill" 
+             TargetType="StackLayout">
+        <Setter Property="Orientation" 
+                Value="Horizontal"/>
+        <Setter Property="HorizontalOptions" 
+                Value="FillAndExpand"/>
       </Style>
 
-      <!--Estilo para a orientação, margens, largura e altura para os botões-->
-      <Style x:Key="TinyButton" TargetType="Button">
-        <Setter Property="HorizontalOptions" Value="Center"/>
+      <!--Estilo para a orientação, margens, largura e altura para os social button-->
+      <Style x:Key="TinyButton" 
+             TargetType="Button">
+        <Setter Property="HorizontalOptions" 
+                Value="Center"/>
+        
+        <Setter Property="BackgroundColor" 
+                Value="White"/>
+        
         <Setter Property="Margin">
           <Setter.Value>
             <OnPlatform x:TypeArguments="Thickness"
@@ -41,6 +64,7 @@
                         WinPhone="45"/>
           </Setter.Value>
         </Setter>
+        
         <Setter Property="WidthRequest">
           <Setter.Value>
             <OnPlatform x:TypeArguments="x:Double"
@@ -49,6 +73,7 @@
                         WinPhone="64"/>
           </Setter.Value>
         </Setter>
+        
         <Setter Property="HeightRequest">
           <Setter.Value>
             <OnPlatform x:TypeArguments="x:Double"
@@ -58,18 +83,85 @@
           </Setter.Value>
         </Setter>
       </Style>
-
-      <!--Estilo para formatar o formulário de adição de ofertas-->
-      <Style x:Key="ConteudoFormatado" TargetType="StackLayout">
-        <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
-        <Setter Property="VerticalOptions">
+      
+      <!--Estilo para a orientação, margens, largura e altura para os botões de adição do formulário-->
+      <Style x:Key="TinyButtonAdd" 
+             TargetType="Button">
+        <Setter Property="HorizontalOptions" 
+                Value="Center"/>   
+        
+        <Setter Property="BackgroundColor" 
+                Value="White"/>        
+        
+        <Setter Property="Margin" 
+                Value="5"/>
+        
+        <Setter Property="WidthRequest">
           <Setter.Value>
-            <OnPlatform x:TypeArguments="LayoutOptions"
-                        Android="Center"
-                        iOS="Center"
-                        WinPhone="Start"/>
+            <OnPlatform x:TypeArguments="x:Double"
+                        Android="32"
+                        iOS="32"
+                        WinPhone="64"/>
           </Setter.Value>
         </Setter>
+        
+        <Setter Property="HeightRequest">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double"
+                        Android="16"
+                        iOS="16"
+                        WinPhone="32"/>
+          </Setter.Value>
+        </Setter>
+      </Style>
+
+      <!--Estilo para formatar o formulário de adição de ofertas-->
+      <Style x:Key="ConteudoFormatado" 
+             TargetType="StackLayout">
+        
+        <Setter Property="Margin" 
+                Value="30"/>
+      </Style>
+      
+      <!--Estilo dos campos do formulário de adição de ofertas-->
+      <Style x:Key="PropriedadeGeralEntry" 
+             TargetType="Entry">
+        <Setter Property="HorizontalOptions" 
+                Value="FillAndExpand"/>
+        <Setter Property="Margin" 
+                Value="5"/>
+      </Style>
+
+      <Style x:Key="PropriedadeGeralPicker" 
+             TargetType="Picker">
+        <Setter Property="HorizontalOptions" 
+                Value="FillAndExpand"/>
+        <Setter Property="Margin" 
+                Value="5"/>
+      </Style>
+
+      <Style x:Key="PropriedadeGeralDatePicker" 
+             TargetType="DatePicker">
+        <Setter Property="HorizontalOptions" 
+                Value="FillAndExpand"/>
+        <Setter Property="Margin" 
+                Value="5"/>
+      </Style>
+      
+      <!--Estilo dos botões da aplicação-->
+      <Style x:Key="EstiloBotao" 
+             TargetType="Button">
+        <Setter Property="BackgroundColor" 
+                Value="{StaticResource VerdeMedio}"/>
+        
+        <Setter Property="TextColor" 
+                Value="White"/>
+        
+        <Setter Property="HorizontalOptions" 
+                Value="FillAndExpand"/>
+        
+        <Setter Property="Margin" 
+                Value="5"/>
       </Style>
 
     </ResourceDictionary>

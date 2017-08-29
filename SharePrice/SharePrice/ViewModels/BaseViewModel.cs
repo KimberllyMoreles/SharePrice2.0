@@ -9,12 +9,14 @@ using Xamarin.Forms;
 
 namespace SharePrice.ViewModels
 {
-    public class BaseViewModel : BindableBase, INavigatingAware, IDestructible, INotifyPropertyChanged
-    {
-        private string _title;
+    public class BaseViewModel :  BindableBase, INavigatingAware, IDestructible, INotifyPropertyChanged
+    {        
         public bool isBusy;
         public event PropertyChangedEventHandler PropertyChanged;
-        protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null) => PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        protected virtual void OnPropertyChanged([CallerMemberName]string propertyName = null)
+        {
+            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+        }
 
         public bool IsBusy
         {
@@ -57,14 +59,7 @@ namespace SharePrice.ViewModels
 
             await Application.Current.MainPage.Navigation.PushAsync(page);
         }
-
-
-        public string Title
-        {
-            get { return _title; }
-            set { SetProperty(ref _title, value); }
-        }
-
+        
         public virtual void Destroy()
         {
         }

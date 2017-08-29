@@ -5,12 +5,71 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.AdicionarOfertaPage"
              Title="Adicionar Oferta">
+
     <StackLayout Style="{StaticResource ConteudoFormatado}">
-        <Entry Placeholder="Produto" WidthRequest="300"></Entry>
-        <Picker></Picker>
-        <Entry Placeholder="Local de Venda"></Entry>
-        <DatePicker></DatePicker>
-        <Entry Placeholder="Preço"></Entry>
-        <Button Text="OK"/>
+        
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            
+            <Entry Placeholder="Produto" 
+                   Style="{StaticResource PropriedadeGeralEntry}"/>
+            
+            <Button Style="{StaticResource TinyButtonAdd}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                Android="Resources/drawable/add.png"
+                                iOS="Resources/add.png"
+                                WinPhone="Assets/add.png"/>
+                </Button.Image>
+            </Button>
+            
+        </StackLayout>
+
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            
+            <Picker Title="Selecione um gênero" 
+                    Style="{StaticResource PropriedadeGeralPicker}">   
+                
+            </Picker>
+            
+            <Button Style="{StaticResource TinyButtonAdd}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                Android="Resources/drawable/add.png"
+                                iOS="Resources/add.png"
+                                WinPhone="Assets/add.png"/>
+                </Button.Image>
+            </Button>
+            
+        </StackLayout>
+
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            
+            <Entry Placeholder="Local de Venda"
+                   Style="{StaticResource PropriedadeGeralEntry}"/>
+            
+        </StackLayout>
+
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            
+            <DatePicker Style="{StaticResource PropriedadeGeralDatePicker}">
+                
+            </DatePicker>
+            
+            <Entry Placeholder="Preço" 
+                   Style="{StaticResource PropriedadeGeralEntry}"/>
+            
+        </StackLayout>
+
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            
+            <Button Text="Limpar" 
+                    Style="{StaticResource EstiloBotao}"/>
+            
+            <Button Text="OK" 
+                    Style="{StaticResource EstiloBotao}"/>
+            
+        </StackLayout>
+        
     </StackLayout>
+    
 </ContentPage>
