@@ -72,3 +72,11 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\res\drawable\user.png
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\R.cs.flag
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\uploadflags.txt
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Release\SharePrice.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\bin\Release\SharePrice.Droid.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\FormsViewGroup.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\SharePrice.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\SharePrice.Droid.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\Xamarin.Forms.Core.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.Droid\obj\Release\android\assets\Xamarin.Forms.Xaml.dll.mdb

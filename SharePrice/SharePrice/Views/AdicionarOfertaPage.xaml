@@ -12,8 +12,9 @@
             
             <Entry Placeholder="Produto" 
                    Style="{StaticResource PropriedadeGeralEntry}"/>
-            
-            <Button Style="{StaticResource TinyButtonAdd}">
+
+            <Button Style="{StaticResource TinyButtonAdd}" 
+                    Command="{Binding AdicionarProdutoCommand}">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
                                 Android="Resources/drawable/add.png"
@@ -31,7 +32,8 @@
                 
             </Picker>
             
-            <Button Style="{StaticResource TinyButtonAdd}">
+            <Button Style="{StaticResource TinyButtonAdd}"
+                    Command="{Binding AdicionarGeneroCommand}">
                 <Button.Image>
                     <OnPlatform x:TypeArguments="FileImageSource"
                                 Android="Resources/drawable/add.png"
@@ -63,10 +65,12 @@
         <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
             <Button Text="Limpar" 
-                    Style="{StaticResource EstiloBotao}"/>
+                    Style="{StaticResource EstiloBotao}"                    
+                    Command="{Binding LimparCommand}"/>
             
             <Button Text="OK" 
-                    Style="{StaticResource EstiloBotao}"/>
+                    Style="{StaticResource EstiloBotao}"
+                    Command="{Binding SalvarCommand}"/>
             
         </StackLayout>
         
