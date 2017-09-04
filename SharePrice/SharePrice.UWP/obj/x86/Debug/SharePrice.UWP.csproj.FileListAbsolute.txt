@@ -235,3 +235,6 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\Microsoft.WindowsAzure.Mobile.Ext.pri.xml
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Rg.Plugins.Popup.Platform.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Rg.Plugins.Popup.UWP.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Rg.Plugins.Popup.dll

@@ -41,3 +41,7 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Views.AdicionarOfertaPage.xaml.g.cs
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.dll
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Release\Rg.Plugins.Popup.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Release\Rg.Plugins.Popup.Platform.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Controls.InputViews.TextInputCancellableView.xaml.g.cs
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Controls.InputViews.TextInputView.xaml.g.cs

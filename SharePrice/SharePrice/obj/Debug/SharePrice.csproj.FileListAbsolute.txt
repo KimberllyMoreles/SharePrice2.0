@@ -41,3 +41,7 @@ C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.dll
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.pdb
 C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.csprojResolveAssemblyReference.cache
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\Rg.Plugins.Popup.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\Rg.Plugins.Popup.Platform.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Controls.InputViews.TextInputCancellableView.xaml.g.cs
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Controls.InputViews.TextInputView.xaml.g.cs

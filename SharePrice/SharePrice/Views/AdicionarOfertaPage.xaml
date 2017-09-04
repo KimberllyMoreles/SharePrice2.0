@@ -27,7 +27,7 @@
 
         <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
-            <Picker Title="Selecione um gênero" 
+            <Picker Title="Selecione um tipo" 
                     Style="{StaticResource PropriedadeGeralPicker}">   
                 
             </Picker>

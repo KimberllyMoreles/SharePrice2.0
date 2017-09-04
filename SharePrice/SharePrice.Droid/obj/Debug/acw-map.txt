@@ -2,6 +2,10 @@ SharePrice.Droid.MainActivity, SharePrice.Droid;md5c9a2e6871b741f99a214ab871052a
 SharePrice.Droid.MainActivity, SharePrice.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c9a2e6871b741f99a214ab871052a596.MainActivity
 SharePrice.Droid.MainActivity;md5c9a2e6871b741f99a214ab871052a596.MainActivity
 shareprice.droid.MainActivity;md5c9a2e6871b741f99a214ab871052a596.MainActivity
+SharePrice.Droid.SplashScreenActivity, SharePrice.Droid;md5c9a2e6871b741f99a214ab871052a596.SplashScreenActivity
+SharePrice.Droid.SplashScreenActivity, SharePrice.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5c9a2e6871b741f99a214ab871052a596.SplashScreenActivity
+SharePrice.Droid.SplashScreenActivity;md5c9a2e6871b741f99a214ab871052a596.SplashScreenActivity
+shareprice.droid.SplashScreenActivity;md5c9a2e6871b741f99a214ab871052a596.SplashScreenActivity
 Xamarin.Auth._MobileServices.AndroidAccountStore/SecretAccount, Microsoft.WindowsAzure.Mobile.Ext;md56beaf3ca16f9b29c56822643de3b05fa.AndroidAccountStore_SecretAccount
 Xamarin.Auth._MobileServices.AndroidAccountStore+SecretAccount, Microsoft.WindowsAzure.Mobile.Ext, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;md56beaf3ca16f9b29c56822643de3b05fa.AndroidAccountStore_SecretAccount
 Xamarin.Auth._MobileServices.AndroidAccountStore.SecretAccount;md56beaf3ca16f9b29c56822643de3b05fa.AndroidAccountStore_SecretAccount
@@ -26,6 +30,10 @@ Xamarin.Auth._MobileServices.WebAuthenticatorActivity/Client, Microsoft.WindowsA
 Xamarin.Auth._MobileServices.WebAuthenticatorActivity+Client, Microsoft.WindowsAzure.Mobile.Ext, Version=3.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35;md56beaf3ca16f9b29c56822643de3b05fa.WebAuthenticatorActivity_Client
 Xamarin.Auth._MobileServices.WebAuthenticatorActivity.Client;md56beaf3ca16f9b29c56822643de3b05fa.WebAuthenticatorActivity_Client
 xamarin.auth._mobileservices.WebAuthenticatorActivity_Client;md56beaf3ca16f9b29c56822643de3b05fa.WebAuthenticatorActivity_Client
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup.Droid;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer, Rg.Plugins.Popup.Droid, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+Rg.Plugins.Popup.Droid.Renderers.PopupPageRenderer;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
+rg.plugins.popup.droid.renderers.PopupPageRenderer;md5d3faaefeebcb93e0145f431f44dc199e.PopupPageRenderer
 Android.Support.Design.Widget.Snackbar/SnackbarActionClickImplementor, Xamarin.Android.Support.Design;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar+SnackbarActionClickImplementor, Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;android.support.design.widget.Snackbar_SnackbarActionClickImplementor
 Android.Support.Design.Widget.Snackbar.SnackbarActionClickImplementor;android.support.design.widget.Snackbar_SnackbarActionClickImplementor

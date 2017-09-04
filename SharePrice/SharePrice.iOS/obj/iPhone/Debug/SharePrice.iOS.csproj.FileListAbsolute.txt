@@ -1,0 +1,6 @@
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\optimized\
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\SharePrice.iOS.csprojResolveAssemblyReference.cache
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.iOS\obj\iPhone\Debug\SharePrice.iOS.csproj.SharePrice.iOS.exe.config

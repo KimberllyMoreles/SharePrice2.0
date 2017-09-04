@@ -2999,7 +2999,7 @@ containing a value of this type.
 <item name="android:windowDrawsSystemBarBackgrounds">true</item>
     <item name="android:statusBarColor">@android:color/transparent</item>
          */
-        public static final int MyTheme=0x7f0a0172;
+        public static final int MyTheme=0x7f0a0174;
         public static final int MyTheme_Base=0x7f0a0173;
         public static final int Platform_AppCompat=0x7f0a0032;
         public static final int Platform_AppCompat_Light=0x7f0a0033;
@@ -3115,6 +3115,7 @@ containing a value of this type.
         public static final int Theme_MediaRouter_Light=0x7f0a0001;
         public static final int Theme_MediaRouter_Light_DarkControlPanel=0x7f0a0002;
         public static final int Theme_MediaRouter_LightControlPanel=0x7f0a0003;
+        public static final int Theme_Splash=0x7f0a0172;
         public static final int ThemeOverlay_AppCompat=0x7f0a010e;
         public static final int ThemeOverlay_AppCompat_ActionBar=0x7f0a010f;
         public static final int ThemeOverlay_AppCompat_Dark=0x7f0a0110;

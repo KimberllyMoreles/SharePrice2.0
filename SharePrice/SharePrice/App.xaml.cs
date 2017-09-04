@@ -1,5 +1,7 @@
 ﻿using DryIoc;
 using Prism.DryIoc;
+using SharePrice.Events;
+using SharePrice.Service;
 using SharePrice.Views;
 using Xamarin.Forms;
 
@@ -24,6 +26,8 @@ namespace SharePrice
             Container.RegisterTypeForNavigation<InitialPage>();
             Container.RegisterTypeForNavigation<LoginPage>();
             Container.RegisterTypeForNavigation<AdicionarOfertaPage>();
+
+            Container.Register<IInputAlertDialogService, InputAlertDialogService>();
         }
     }
 }

@@ -6,24 +6,29 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using SharePrice.Events;
 
 namespace SharePrice.ViewModels
 {
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
         private INavigationService _navigationService;
+        private readonly IInputAlertDialogService _inputAlertDialogService;
 
-        public Command AdicionarProdutoCommand { get; }
-        public Command AdicionarGeneroCommand { get; }
+        public DelegateCommand AdicionarProdutoCommand { get; }
+        public DelegateCommand AdicionarGeneroCommand { get; }
+
         public Command LimparCommand { get; }
         public Command SalvarCommand { get; }
 
-        public AdicionarOfertaPageViewModel(INavigationService navigationService)
+        public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService)
         {
             _navigationService = navigationService;
+            _inputAlertDialogService = inputAlertDialogService;
+            
+            AdicionarProdutoCommand = new DelegateCommand(ExecuteAdicionarProdutoCommandAsync);
+            AdicionarGeneroCommand = new DelegateCommand(ExecuteAdicionarGeneroCommandAsync);
 
-            AdicionarProdutoCommand = new Command(async () => await ExecuteAdicionarProdutoCommandAsync());
-            AdicionarGeneroCommand = new Command(async () => await ExecuteAdicionarGeneroCommandAsync());
             LimparCommand = new Command(async () => await ExecuteLimparCommandAsync());
             SalvarCommand = new Command(async () => await ExecuteSalvarCommandAsync());
         }
@@ -38,14 +43,16 @@ namespace SharePrice.ViewModels
             throw new NotImplementedException();
         }
 
-        private Task ExecuteAdicionarGeneroCommandAsync()
+        private async void ExecuteAdicionarGeneroCommandAsync()
         {
-            throw new NotImplementedException();
+            var novoGenero = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
+                "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo");            
         }
 
-        private Task ExecuteAdicionarProdutoCommandAsync()
+        private async void ExecuteAdicionarProdutoCommandAsync()
         {
-            throw new NotImplementedException();
+            var novoProduto = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
+                "Adicionar produto", "Impressora HP, Notebook Acer", "Salvar", "Cancelar", "Insira um nome para este produto");
         }
     }
 }
