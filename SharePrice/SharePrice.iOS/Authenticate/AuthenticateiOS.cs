@@ -15,7 +15,8 @@ namespace SharePrice.iOS.Authenticate
 {
     public class AuthenticateiOS : IAuthenticate
     {
-        public async Task<MobileServiceUser> Authenticate(MobileServiceClient client, MobileServiceAuthenticationProvider provedor)
+
+        public async Task<MobileServiceUser> AuthenticateAsync(MobileServiceClient client, MobileServiceAuthenticationProvider provedor)
         {
             try
             {

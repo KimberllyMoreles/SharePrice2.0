@@ -2272,6 +2272,17 @@
           }
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.4": {
         "type": "package",
         "compile": {
@@ -4682,6 +4693,17 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.4": {
@@ -7135,6 +7157,17 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.4": {
         "type": "package",
         "compile": {
@@ -9554,6 +9587,17 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.4": {
@@ -12016,6 +12060,17 @@
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/2.5.4": {
         "type": "package",
         "compile": {
@@ -14435,6 +14490,17 @@
         },
         "runtime": {
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.4": {
@@ -16895,6 +16961,17 @@
         },
         "runtime": {
           "runtimes/aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
+        }
+      },
+      "Xam.Plugin.Media/2.6.2": {
+        "type": "package",
+        "compile": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/Plugin.Media.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Media.dll": {}
         }
       },
       "Xam.Plugins.Settings/2.5.4": {
@@ -23457,6 +23534,66 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Xam.Plugin.Media/2.6.2": {
+      "sha512": "WN5n0205WfjS1zUsLoyfKT4nkTlUtFSvpJ0GvuQ4v3A7AJeXLASAQOB7iND8aVLFI/fg7qHZ6qxzLroAhJaa7g==",
+      "type": "package",
+      "path": "xam.plugin.media/2.6.2",
+      "files": [
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Media.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Media.dll",
+        "lib/MonoAndroid10/Plugin.Media.pdb",
+        "lib/MonoAndroid10/Plugin.Media.xml",
+        "lib/UAP10/Plugin.Media.Abstractions.dll",
+        "lib/UAP10/Plugin.Media.Abstractions.pdb",
+        "lib/UAP10/Plugin.Media.Abstractions.xml",
+        "lib/UAP10/Plugin.Media.dll",
+        "lib/UAP10/Plugin.Media.pdb",
+        "lib/UAP10/Plugin.Media.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Media.dll",
+        "lib/Xamarin.iOS10/Plugin.Media.xml",
+        "lib/net45/Plugin.Media.Abstractions.dll",
+        "lib/net45/Plugin.Media.Abstractions.xml",
+        "lib/net45/Plugin.Media.dll",
+        "lib/net45/Plugin.Media.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.Abstractions.xml",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.dll",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.pdb",
+        "lib/portable-net45+wp80+win8+wpa81/Plugin.Media.xml",
+        "lib/win8/Plugin.Media.Abstractions.dll",
+        "lib/win8/Plugin.Media.Abstractions.pdb",
+        "lib/win8/Plugin.Media.Abstractions.xml",
+        "lib/win8/Plugin.Media.dll",
+        "lib/win8/Plugin.Media.pdb",
+        "lib/win8/Plugin.Media.xml",
+        "lib/wp8/Plugin.Media.Abstractions.dll",
+        "lib/wp8/Plugin.Media.Abstractions.pdb",
+        "lib/wp8/Plugin.Media.Abstractions.xml",
+        "lib/wp8/Plugin.Media.dll",
+        "lib/wp8/Plugin.Media.pdb",
+        "lib/wp8/Plugin.Media.xml",
+        "lib/wpa81/Plugin.Media.Abstractions.dll",
+        "lib/wpa81/Plugin.Media.Abstractions.pdb",
+        "lib/wpa81/Plugin.Media.Abstractions.xml",
+        "lib/wpa81/Plugin.Media.dll",
+        "lib/wpa81/Plugin.Media.pdb",
+        "lib/wpa81/Plugin.Media.pri",
+        "lib/wpa81/Plugin.Media.xml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUI.xaml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUI.xbf",
+        "lib/wpa81/Plugin.Media/CameraCaptureUIPage.xaml",
+        "lib/wpa81/Plugin.Media/CameraCaptureUIPage.xbf",
+        "lib/wpa81/Plugin.Media/Plugin.Media.xr.xml",
+        "readme.txt",
+        "xam.plugin.media.2.6.2.nupkg.sha512",
+        "xam.plugin.media.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/2.5.4": {
       "sha512": "ygk2q+ZEav2NO9CCxYo43LopjX5S2yete7uG0N6FS2EtiNV7yozhvzXppsPtUyjpMNk6/eelzQE/scjriJ6dDQ==",
       "type": "package",
@@ -23685,6 +23822,7 @@
       "Prism.DryIoc.Forms >= 6.3.0.1",
       "Prism.Forms >= 6.3.0",
       "Rg.Plugins.Popup >= 1.0.4",
+      "Xam.Plugin.Media >= 2.6.2",
       "Xam.Plugins.Settings >= 2.5.4",
       "Xamarin.Forms >= 2.3.4.267"
     ],
@@ -23695,16 +23833,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
       "projectName": "SharePrice.UWP",
-      "projectPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\project.json",
+      "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj": {
-              "projectPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj"
+            "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice\\SharePrice.csproj": {
+              "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice\\SharePrice.csproj"
             }
           }
         }
@@ -23718,6 +23856,7 @@
       "Prism.DryIoc.Forms": "6.3.0.1",
       "Prism.Forms": "6.3.0",
       "Rg.Plugins.Popup": "1.0.4",
+      "Xam.Plugin.Media": "2.6.2",
       "Xam.Plugins.Settings": "2.5.4",
       "Xamarin.Forms": "2.3.4.267"
     },

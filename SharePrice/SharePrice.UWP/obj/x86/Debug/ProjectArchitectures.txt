@@ -1,2 +1,2 @@
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\SharePrice.UWP.csproj;x86
-C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\SharePrice.csproj;neutral
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\SharePrice.UWP.csproj;x86
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\SharePrice.csproj;neutral

@@ -1,38 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SharePrice.Views.MainPage"
-             Title="Share Price">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-        <StackLayout Style="{StaticResource StackLayoutHorizontal}" VerticalOptions="Start">
-            <Button Style="{StaticResource TinyButton}" Command="{Binding LoginFacebookCommand}">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="Resources/drawable/user.png"
-                        iOS="Resources/user.png"
-                        WinPhone="Assets/user.png"/>
-                </Button.Image>
-            </Button>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+            prism:ViewModelLocator.AutowireViewModel="True"            
+            xmlns:local="clr-namespace:SharePrice.Views;assembly=SharePrice"
+            x:Class="SharePrice.Views.MainPage"
+            Style="{StaticResource TabbedStyle}"                
+            Title="Share Price">
+    <TabbedPage.Children>
+        <local:ListPage>
+            <local:ListPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/list.png"
+                        iOS="Resources/list.png"
+                        WinPhone="Assets/list.png"/>
+            </local:ListPage.Icon>
+        </local:ListPage>
 
-            <Button Style="{StaticResource TinyButton}" Command="{Binding AdicionarOfertaPageCommand}">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
+        <local:AdicionarOfertaPage>
+            <local:AdicionarOfertaPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
                         Android="Resources/drawable/add.png"
                         iOS="Resources/add.png"
                         WinPhone="Assets/add.png"/>
-                </Button.Image>
-            </Button>
+            </local:AdicionarOfertaPage.Icon>
+        </local:AdicionarOfertaPage>
 
-            <Button Style="{StaticResource TinyButton}" Command="{Binding NotificacaoCommand}">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
+        <local:NotificationPage>
+            <local:NotificationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
                         Android="Resources/drawable/notification.png"
                         iOS="Resources/notification.png"
                         WinPhone="Assets/notification.png"/>
-                </Button.Image>
-            </Button>
-        </StackLayout>
-    </StackLayout>
-</ContentPage>
+            </local:NotificationPage.Icon>
+        </local:NotificationPage>
+        
+        <local:UserPage>
+            <local:UserPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="Resources/drawable/user.png"
+                        iOS="Resources/user.png"
+                        WinPhone="Assets/user.png"/>
+            </local:UserPage.Icon>
+        </local:UserPage>
+       
+    </TabbedPage.Children>
+</TabbedPage>

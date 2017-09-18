@@ -6,54 +6,37 @@ using System.Collections.Generic;
 using System.Linq;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+using Prism.Events;
+using SharePrice.Events;
 
 namespace SharePrice.ViewModels
 {
     public class MainPageViewModel : BaseViewModel
     {
-        private INavigationService _navigationService;
+        IEventAggregator _ea { get; }
 
-        public Command UsuarioPageCommand { get; }
-        public Command AdicionarOfertaPageCommand { get; }
-        public Command NotificacaoCommand { get; }
-
-        public MainPageViewModel(INavigationService navigationService)
+        private string _titulo;
+        public string Titulo
         {
-            _navigationService = navigationService;
-
-            UsuarioPageCommand = new Command(async () => await ExecuteUsuarioPageCommandAsync());
-            AdicionarOfertaPageCommand = new Command(async () => await ExecuteAdicionarOfertaPageCommandAsync());
-            NotificacaoCommand = new Command(async () => await ExecuteNotificacaoCommandAsync());
+            get { return _titulo; }
+            set { SetProperty(ref _titulo, value); }
         }
 
-        private Task ExecuteNotificacaoCommandAsync()
+
+        public MainPageViewModel(IEventAggregator eventAggregator)
         {
-            throw new NotImplementedException();
+            _ea = eventAggregator;
         }
 
-        private async Task ExecuteAdicionarOfertaPageCommandAsync()
-        {
-            await _navigationService?.NavigateAsync("AdicionarOfertaPage");
-        }
-
-        private async Task ExecuteUsuarioPageCommandAsync()
-        {
-            await _navigationService?.NavigateAsync("MainPage");
-        }
-
-        public void OnNavigatedFrom(NavigationParameters parameters)
+        public override void OnNavigatingTo(Prism.Navigation.NavigationParameters parameters)
         {
 
+            _ea.GetEvent<InitializeTabbedChildrenEvent>().Publish(parameters);
+
+            /*if (parameters.ContainsKey("parametro"))
+                this.Titulo = parameters["parametro"].ToString();*/
         }
 
-        public void OnNavigatingTo(NavigationParameters parameters)
-        {
 
-        }
-
-        public void OnNavigatedTo(NavigationParameters parameters)
-        {
-            
-        }
     }
 }

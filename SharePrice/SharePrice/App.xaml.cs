@@ -28,6 +28,9 @@ namespace SharePrice
             Container.RegisterTypeForNavigation<AdicionarOfertaPage>();
 
             Container.Register<IInputAlertDialogService, InputAlertDialogService>();
+            Container.RegisterTypeForNavigation<ListPage>();
+            Container.RegisterTypeForNavigation<UserPage>();
+            Container.RegisterTypeForNavigation<NotificationPage>();
         }
     }
 }
