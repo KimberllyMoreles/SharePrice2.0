@@ -15,7 +15,7 @@ using SharePrice.Service;
 [assembly: Dependency(typeof(AzureService))]
 namespace SharePrice.Service
 {
-    public class AzureService
+    public class AzureServiceGenero
     {
         public static readonly string AppUrl = "http://sharepriceapp.azurewebsites.net";
         public MobileServiceClient Client { get; set; } = null;

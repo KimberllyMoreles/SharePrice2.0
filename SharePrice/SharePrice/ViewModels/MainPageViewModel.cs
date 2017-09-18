@@ -8,12 +8,14 @@ using Xamarin.Forms;
 using System.Threading.Tasks;
 using Prism.Events;
 using SharePrice.Events;
+using SharePrice.Helpers;
 
 namespace SharePrice.ViewModels
 {
     public class MainPageViewModel : BaseViewModel
     {
         IEventAggregator _ea { get; }
+        private INavigationService _navigationService;
 
         private string _titulo;
         public string Titulo
@@ -23,9 +25,14 @@ namespace SharePrice.ViewModels
         }
 
 
-        public MainPageViewModel(IEventAggregator eventAggregator)
+        public MainPageViewModel(INavigationService navigationService, IEventAggregator eventAggregator)
         {
             _ea = eventAggregator;
+            _navigationService = navigationService;
+
+            if (!Settings.IsLoggedIn)
+                _navigationService?.NavigateAsync("InitialPage");
+
         }
 
         public override void OnNavigatingTo(Prism.Navigation.NavigationParameters parameters)

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SharePrice.Authenticate
+namespace SharePrice.Authentication
 {
     public interface IAuthenticate
     {

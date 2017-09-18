@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using SharePrice.Helpers;
 using Foundation;
 using UIKit;
 using SharePrice.iOS.Authenticate;
-using SharePrice.Authenticate;
+using SharePrice.Authentication;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
 
@@ -20,12 +20,35 @@ namespace SharePrice.iOS.Authenticate
         {
             try
             {
-                return await client.LoginAsync(UIKit.UIApplication.SharedApplication.KeyWindow.RootViewController, provedor);
+                var current = GetController();
+                var user = await client.LoginAsync(current, provedor);// UIKit.UIApplication.SharedApplication.KeyWindow.RootViewController, provedor);
+
+                Settings.AuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
+                Settings.UserId = user?.UserId ?? string.Empty;
+
+                return user;
             }
             catch (Exception ex)
             {
                 return null;
             }
+        }
+
+        private UIKit.UIViewController GetController()
+        {
+            var window = UIKit.UIApplication.SharedApplication.KeyWindow;
+            var root = window.RootViewController;
+
+            if (root == null) return null;
+
+            var current = root;
+
+            while (current.PresentedViewController != null)
+            {
+                current = current.PresentedViewController;
+            }
+
+            return current;
         }
     }
 }

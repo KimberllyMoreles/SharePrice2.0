@@ -25,8 +25,6 @@ namespace SharePrice.iOS
         {
             global::Xamarin.Forms.Forms.Init();
 
-            Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-
             LoadApplication(new App(new iOSInitializer()));
 
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();

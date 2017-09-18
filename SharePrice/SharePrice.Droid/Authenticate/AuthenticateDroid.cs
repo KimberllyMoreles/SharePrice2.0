@@ -10,9 +10,10 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using SharePrice.Droid.Authenticate;
-using SharePrice.Authenticate;
+using SharePrice.Authentication;
 using Microsoft.WindowsAzure.MobileServices;
 using System.Threading.Tasks;
+using SharePrice.Helpers;
 
 [assembly: Xamarin.Forms.Dependency(typeof(AuthenticateDroid))]
 namespace SharePrice.Droid.Authenticate
@@ -23,7 +24,12 @@ namespace SharePrice.Droid.Authenticate
         {
             try
             {
-                return await client.LoginAsync(Xamarin.Forms.Forms.Context, provedor);
+                var user = await client.LoginAsync(Xamarin.Forms.Forms.Context, provedor);
+
+                Settings.AuthToken = user?.MobileServiceAuthenticationToken ?? string.Empty;
+                Settings.UserId = user?.UserId;
+
+                return user;
             }
             catch (Exception ex)
             {
