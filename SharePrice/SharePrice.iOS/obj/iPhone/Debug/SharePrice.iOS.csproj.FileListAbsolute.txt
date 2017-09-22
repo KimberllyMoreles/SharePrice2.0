@@ -94,3 +94,15 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Media.dll
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Media.xml
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Media.Abstractions.xml
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.Abstractions.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_green.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\SQLitePCLRaw.batteries_v2.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\SQLitePCLRaw.core.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\SQLitePCLRaw.provider.sqlite3.dll
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Microsoft.WindowsAzure.Mobile.SQLiteStore.xml
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.pdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.xml
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.Abstractions.pdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\Plugin.Connectivity.Abstractions.xml

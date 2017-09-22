@@ -11,12 +11,13 @@ namespace SharePrice.Models
     [DataTable("Tipo")]
     public class Tipo
     {
-        [JsonProperty("idTipo")]
-        public int Id { get; set; }
+        [JsonProperty("id")]
+        public string Id { get; set; }
 
-        [JsonProperty("nomeTipo")]
+        [JsonProperty("nome")]
         public string Nome { get; set; }
-
+        
+        [Version]
         private string Version;
     }
 }
