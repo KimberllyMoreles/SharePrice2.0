@@ -2,10 +2,16 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:local="clr-namespace:SharePrice;assembly=SharePrice"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.AdicionarOfertaPage">
 
     <StackLayout Style="{StaticResource ConteudoFormatado}">
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            <Image Source="{Binding ImagemOferta}"/>
+            <Button Text="Tirar Foto" Command="{Binding TirarFotoCommand}"/>
+            <Button Text="Selecionar uma imagem" Command="{Binding SelecionarImagemCommand}"/>
+        </StackLayout>
         
         <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
