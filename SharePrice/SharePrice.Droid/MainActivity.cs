@@ -8,6 +8,7 @@ using Android.Widget;
 using Android.OS;
 using DryIoc;
 using Prism.DryIoc;
+using Plugin.Media;
 
 namespace SharePrice.Droid
 {
@@ -21,6 +22,7 @@ namespace SharePrice.Droid
 
             base.OnCreate(bundle);
 
+            //await CrossMedia.Current.Initialize();
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();

@@ -15,7 +15,7 @@ namespace SharePrice
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("NavigationPage/MainPage");
+            NavigationService.NavigateAsync("NavigationPage/AdicionarOfertaPage");
         }
 
         protected override void RegisterTypes()

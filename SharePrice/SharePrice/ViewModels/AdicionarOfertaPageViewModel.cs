@@ -17,7 +17,7 @@ namespace SharePrice.ViewModels
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
         private AzureServiceTipo _azureServiceTipo;
-
+        
         private INavigationService _navigationService;
         private readonly IInputAlertDialogService _inputAlertDialogService;
 
@@ -30,14 +30,30 @@ namespace SharePrice.ViewModels
         public DelegateCommand LimparCommand { get; }
         public DelegateCommand SalvarCommand { get; }
 
-        public string ImagemOferta;
+        public ImageSource imagemOferta;
+        public ImageSource ImagemOferta
+        {
+            get
+            {
+                return this.imagemOferta;
+            }
+            set
+            {
+                if (Equals(value, this.imagemOferta))
+                {
+                    return;
+                }
+                this.imagemOferta = value;
+                OnPropertyChanged();
+            }
+        }
 
         public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService, IDependencyService dependencyService)
         {
             _navigationService = navigationService;
             _inputAlertDialogService = inputAlertDialogService;
             _azureServiceTipo = dependencyService.Get<AzureServiceTipo>();
-
+            
             TirarFotoCommand = new DelegateCommand(ExecuteTirarFotoCommandAsync);
             SelecionarImagemCommand = new DelegateCommand(ExecuteSelecionarImagemCommandAsync);
 
@@ -46,34 +62,48 @@ namespace SharePrice.ViewModels
 
             LimparCommand = new DelegateCommand(ExecuteLimparCommandAsync);
             SalvarCommand = new DelegateCommand(ExecuteSalvarCommandAsync);
+            
         }
 
         private async void ExecuteSelecionarImagemCommandAsync()
         {
-            /*if (CrossMedia.Current.IsPickPhotoSupported)
-                var photo = await CrossMedia.Current.PickPhotoAsync();
-       */ }
+            if (CrossMedia.Current.IsPickPhotoSupported)
+            {
+                var foto = await CrossMedia.Current.PickPhotoAsync();
+                ImagemOferta = ImageSource.FromStream(() =>
+                {
+                    var stream = foto.GetStream();
+                    foto.Dispose();
+                    return stream;
+                });
+            }
+
+        }
 
         private async void ExecuteTirarFotoCommandAsync()
         {
-            if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
-            {
-                // Supply media options for saving our photo after it's taken.
-                var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
+             if (CrossMedia.Current.IsCameraAvailable && CrossMedia.Current.IsTakePhotoSupported)
+             {
+                 // Supply media options for saving our photo after it's taken.
+                 var mediaOptions = new Plugin.Media.Abstractions.StoreCameraMediaOptions
+                 {
+                     Directory = "Pictures",
+                     Name = $"{DateTime.UtcNow}.jpg"
+                 };
+
+                 // Take a photo of the business receipt.
+                 var foto = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
+
+                 if (foto == null)
+                     return;
+
+                ImagemOferta = ImageSource.FromStream(() =>
                 {
-                    Directory = "Pictures",
-                    Name = $"{DateTime.UtcNow}.jpg"
-                };
-
-                // Take a photo of the business receipt.
-                var foto = await CrossMedia.Current.TakePhotoAsync(mediaOptions);
-
-                if (foto == null)
-                    return;
-                
-                var resource = ImageSource.FromResource(foto.AlbumPath);
-                ImagemOferta = resource.ToString();
-            }
+                    var stream = foto.GetStream();
+                    foto.Dispose();
+                    return stream;
+                });
+             }
         }
 
         private async void ExecuteSalvarCommandAsync()
