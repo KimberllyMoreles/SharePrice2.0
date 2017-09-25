@@ -50,8 +50,8 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service\AzureService.cs" />
-    <Compile Include="Service\AzureServiceTipo.cs" />
     <Compile Include="Service\InputAlertDialogService.cs" />
+    <Compile Include="Service\TipoService.cs" />
     <Compile Include="ViewModels\AdicionarOfertaPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\InformationPageViewModel.cs" />

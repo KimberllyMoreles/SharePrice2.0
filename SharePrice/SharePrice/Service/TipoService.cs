@@ -1,24 +1,20 @@
-﻿using SharePrice;
-using SharePrice.Helpers;
-using Microsoft.WindowsAzure.MobileServices;
-using Newtonsoft.Json;
+﻿using Microsoft.WindowsAzure.MobileServices;
+using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
+using Microsoft.WindowsAzure.MobileServices.Sync;
+using SharePrice.Models;
+using SharePrice.Service;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Net.Http;
-using System.Net.Http.Headers;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
-using SharePrice.Service;
-using Microsoft.WindowsAzure.MobileServices.Sync;
-using Microsoft.WindowsAzure.MobileServices.SQLiteStore;
-using SharePrice.Models;
-using System.Collections.ObjectModel;
 
-[assembly: Dependency(typeof(AzureServiceTipo))]
+[assembly: Dependency(typeof(TipoService))]
 namespace SharePrice.Service
 {
-    public class AzureServiceTipo
+    public class TipoService
     {
         public static readonly string AppUrl = "http://sharepriceapp.azurewebsites.net";
         private IMobileServiceClient _client;
@@ -26,7 +22,7 @@ namespace SharePrice.Service
 
         const string dbPath = "sharePriceDb";
 
-        public AzureServiceTipo()
+        public TipoService()
         {
             _client = new MobileServiceClient(AppUrl);
 
@@ -40,14 +36,14 @@ namespace SharePrice.Service
 
         public async void AddTipo(Tipo tipo)
         {
-           /* try
-            {*/
+            try
+            {
                 await _tableTipo.InsertAsync(tipo);
-            /*}
+            }
             catch (Exception e)
             {
                 var erro = e.InnerException;
-            }*/
+            }
         }
 
         public async Task SyncAsync()

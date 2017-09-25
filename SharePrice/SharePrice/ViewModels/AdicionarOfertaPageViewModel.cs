@@ -16,7 +16,7 @@ namespace SharePrice.ViewModels
 {
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
-        private AzureServiceTipo _azureServiceTipo;
+        private TipoService _azureServiceTipo;
         
         private INavigationService _navigationService;
         private readonly IInputAlertDialogService _inputAlertDialogService;
@@ -48,11 +48,18 @@ namespace SharePrice.ViewModels
             }
         }
 
+        private bool isBusy;
+        public bool IsBusy
+        {
+            get { return isBusy; }
+            set { isBusy = value; OnPropertyChanged(); }
+        }
+
         public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService, IDependencyService dependencyService)
         {
             _navigationService = navigationService;
             _inputAlertDialogService = inputAlertDialogService;
-            _azureServiceTipo = dependencyService.Get<AzureServiceTipo>();
+            _azureServiceTipo = dependencyService.Get<TipoService>();
             
             TirarFotoCommand = new DelegateCommand(ExecuteTirarFotoCommandAsync);
             SelecionarImagemCommand = new DelegateCommand(ExecuteSelecionarImagemCommandAsync);
@@ -118,14 +125,18 @@ namespace SharePrice.ViewModels
 
         private async void ExecuteAdicionarGeneroCommandAsync()
         {
-            var novoTipo = new Tipo();
+            if (IsBusy)
+                return;
 
-            string tipo = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
-                "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo");
-
-            novoTipo.Nome = tipo.ToString();
-
+            IsBusy = true;
+            var novoTipo = new Tipo()
+            {
+                Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
+                "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo")
+            };
+            
             _azureServiceTipo.AddTipo(novoTipo);
+            IsBusy = false;
         }
 
         private async void ExecuteAdicionarProdutoCommandAsync()
