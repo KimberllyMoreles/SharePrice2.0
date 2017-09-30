@@ -7,12 +7,34 @@
 
     <StackLayout Style="{StaticResource ConteudoFormatado}">
         
+        <Image Source="{Binding ImagemOferta}" WidthRequest="300" HeightRequest="120"/>
+
         <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
-            <Image Source="{Binding ImagemOferta}"/>
-            <Button Text="Tirar Foto" Command="{Binding TirarFotoCommand}"/>
-            <Button Text="Selecionar uma imagem" Command="{Binding SelecionarImagemCommand}"/>
+
+            <Button Style="{StaticResource TinyButtonAdd}"
+                    Command="{Binding TirarFotoCommand}"
+                    Text="Câmera">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                Android="Resources/drawable/add.png"
+                                iOS="Resources/add.png"
+                                WinPhone="Assets/add.png" />
+                </Button.Image>
+            </Button>
+
+            <Button Style="{StaticResource TinyButtonAdd}"
+                    Command="{Binding SelecionarImagemCommand}"
+                    Text="Galeria">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                            Android="Resources/drawable/add.png"
+                            iOS="Resources/add.png"
+                            WinPhone="Assets/add.png"/>
+                </Button.Image>
+            </Button>
+
         </StackLayout>
-        
+
         <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
             <Entry Placeholder="Produto" 

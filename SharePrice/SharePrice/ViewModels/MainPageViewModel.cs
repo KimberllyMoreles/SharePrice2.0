@@ -30,8 +30,8 @@ namespace SharePrice.ViewModels
             _ea = eventAggregator;
             _navigationService = navigationService;
 
-            if (!Settings.IsLoggedIn)
-                _navigationService?.NavigateAsync("InitialPage");
+            /*if (!Settings.IsLoggedIn)
+                _navigationService?.NavigateAsync("InitialPage");*/
 
         }
 

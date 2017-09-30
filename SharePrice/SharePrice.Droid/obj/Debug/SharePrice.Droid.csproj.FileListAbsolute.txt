@@ -206,3 +206,6 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\bin\Debug\Plugin.Connectivity.Abstractions.xml
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\bin\Debug\Plugin.Connectivity.dll.mdb
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Plugin.Connectivity.dll.mdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\bin\Debug\Plugin.Connectivity.Abstractions.dll.mdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\gallery.png
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\photocamera.png

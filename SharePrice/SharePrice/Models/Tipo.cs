@@ -18,6 +18,6 @@ namespace SharePrice.Models
         public string Nome { get; set; }
         
         [Version]
-        private string Version;
+        private string Versao;
     }
 }

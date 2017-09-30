@@ -48,12 +48,12 @@ namespace SharePrice.ViewModels
             }
         }
 
-        private bool isBusy;
+       /* private bool isBusy;
         public bool IsBusy
         {
             get { return isBusy; }
             set { isBusy = value; OnPropertyChanged(); }
-        }
+        }*/
 
         public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService, IDependencyService dependencyService)
         {
@@ -69,6 +69,8 @@ namespace SharePrice.ViewModels
 
             LimparCommand = new DelegateCommand(ExecuteLimparCommandAsync);
             SalvarCommand = new DelegateCommand(ExecuteSalvarCommandAsync);
+
+            //IsBusy = false;
             
         }
 
@@ -120,23 +122,19 @@ namespace SharePrice.ViewModels
 
         private async void ExecuteLimparCommandAsync()
         {
-            throw new NotImplementedException();
+            var tipos = await _azureServiceTipo.GetTipos();
+            var num = tipos.Count();
+            var aaa = tipos.ToList();
         }
 
         private async void ExecuteAdicionarGeneroCommandAsync()
         {
-            if (IsBusy)
-                return;
-
-            IsBusy = true;
             var novoTipo = new Tipo()
             {
-                Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
+                Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(                
                 "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo")
             };
-            
             _azureServiceTipo.AddTipo(novoTipo);
-            IsBusy = false;
         }
 
         private async void ExecuteAdicionarProdutoCommandAsync()

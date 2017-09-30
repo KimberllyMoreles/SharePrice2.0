@@ -16,15 +16,15 @@ namespace SharePrice.Service
 {
     public class TipoService
     {
-        public static readonly string AppUrl = "http://sharepriceapp.azurewebsites.net";
-        private IMobileServiceClient _client;
+        //public static readonly string ApplicationURL = "http://sharepricecross.azurewebsites.net";
+        public static MobileServiceClient _client = new MobileServiceClient(@"http://sharepricecross.azurewebsites.net");
         private IMobileServiceSyncTable<Tipo> _tableTipo;
 
-        const string dbPath = "sharePriceDb";
+        const string dbPath = "SharePriceDB";
 
         public TipoService()
         {
-            _client = new MobileServiceClient(AppUrl);
+            //_client = new MobileServiceClient(ApplicationURL);
 
             var store = new MobileServiceSQLiteStore(dbPath);
 
@@ -36,14 +36,7 @@ namespace SharePrice.Service
 
         public async void AddTipo(Tipo tipo)
         {
-            try
-            {
-                await _tableTipo.InsertAsync(tipo);
-            }
-            catch (Exception e)
-            {
-                var erro = e.InnerException;
-            }
+            await _tableTipo.InsertAsync(tipo);
         }
 
         public async Task SyncAsync()
@@ -52,7 +45,6 @@ namespace SharePrice.Service
             try
             {
                 await _client.SyncContext.PushAsync();
-
                 await _tableTipo.PullAsync("allTipos", _tableTipo.CreateQuery());
             }
             catch (MobileServicePushFailedException pushEx)

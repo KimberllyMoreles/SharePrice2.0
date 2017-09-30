@@ -17,7 +17,7 @@ namespace SharePrice.Service
 {
     public class AzureService
     {
-        public static readonly string AppUrl = "http://sharepriceapp.azurewebsites.net";
+        public static readonly string AppUrl = "http://sharepricecross.azurewebsites.net";
         public MobileServiceClient Client { get; set; } = null;
 
         public void Initialize()
