@@ -9,6 +9,8 @@ using Android.OS;
 using DryIoc;
 using Prism.DryIoc;
 using Plugin.Media;
+using Android.Net;
+using Android.Content;
 
 namespace SharePrice.Droid
 {
@@ -26,10 +28,12 @@ namespace SharePrice.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-
+            
             LoadApplication(new App(new AndroidInitializer()));
         }
     }
+
+
 
     public class AndroidInitializer : IPlatformInitializer
     {

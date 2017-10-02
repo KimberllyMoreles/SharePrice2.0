@@ -11,12 +11,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-[assembly: Dependency(typeof(TipoService))]
 namespace SharePrice.Service
 {
     public class TipoService
     {
-        //public static readonly string ApplicationURL = "http://sharepricecross.azurewebsites.net";
+        
         public static MobileServiceClient _client = new MobileServiceClient(@"http://sharepricecross.azurewebsites.net");
         private IMobileServiceSyncTable<Tipo> _tableTipo;
 
@@ -57,6 +56,8 @@ namespace SharePrice.Service
         public async Task<IEnumerable<Tipo>> GetTipos()
         {
             var empty = new Tipo[0];
+
+
             try
             {
                 if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)

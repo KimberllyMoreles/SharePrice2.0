@@ -430,10 +430,10 @@
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\System.Xml.XmlSerializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.2\lib\UAP10\Plugin.Connectivity.Abstractions.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.3\lib\UAP10\Plugin.Connectivity.Abstractions.dll">
       <PackagePath>Plugin.Connectivity.Abstractions.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.2\lib\UAP10\Plugin.Connectivity.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.3\lib\UAP10\Plugin.Connectivity.dll">
       <PackagePath>Plugin.Connectivity.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Media\2.6.2\lib\UAP10\Plugin.Media.Abstractions.dll">
@@ -472,6 +472,9 @@
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\facebook.png">
       <PackagePath>Assets\facebook.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\gallery.png">
+      <PackagePath>Assets\gallery.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\google.png">
       <PackagePath>Assets\google.png</PackagePath>
     </AppxPackagedFile>
@@ -480,6 +483,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\notification.png">
       <PackagePath>Assets\notification.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\photocamera.png">
+      <PackagePath>Assets\photocamera.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>

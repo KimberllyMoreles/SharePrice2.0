@@ -16,7 +16,8 @@ namespace SharePrice.ViewModels
 {
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
-        private TipoService _azureServiceTipo;
+        public TipoService _azureServiceTipo;
+        public ProdutoService _produtoService;
         
         private INavigationService _navigationService;
         private readonly IInputAlertDialogService _inputAlertDialogService;
@@ -30,6 +31,7 @@ namespace SharePrice.ViewModels
         public DelegateCommand LimparCommand { get; }
         public DelegateCommand SalvarCommand { get; }
 
+        //declara o campo de imagem da oferta
         public ImageSource imagemOferta;
         public ImageSource ImagemOferta
         {
@@ -48,18 +50,115 @@ namespace SharePrice.ViewModels
             }
         }
 
-       /* private bool isBusy;
+        //declara o entry do produto
+        public string produtoEntry;
+        public string ProdutoEntry
+        {
+            get
+            {
+                return this.produtoEntry;
+            }
+            set
+            {
+                if (Equals(value, this.produtoEntry))
+                {
+                    return;
+                }
+                this.produtoEntry = value;
+                OnPropertyChanged();
+            }
+        }
+
+        //declara o picker do tipo
+        public Picker tipoPicker;
+        public Picker TipoPicker
+        {
+            get
+            {
+                return this.tipoPicker;
+            }
+            set
+            {
+                if (Equals(value, this.tipoPicker))
+                {
+                    return;
+                }
+                this.tipoPicker = value;
+                OnPropertyChanged();
+            }
+        }
+
+        //declara o entry do local da oferta
+        public string localEntry;
+        public string LocalEntry
+        {
+            get
+            {
+                return this.localEntry;
+            }
+            set
+            {
+                if (Equals(value, this.localEntry))
+                {
+                    return;
+                }
+                this.localEntry = value;
+                OnPropertyChanged();
+            }
+        }
+
+        //declara o DatePicker da data da oferta
+        public DatePicker dataPicker;
+        public DatePicker DataPicker
+        {
+            get
+            {
+                return this.dataPicker;
+            }
+            set
+            {
+                if (Equals(value, this.dataPicker))
+                {
+                    return;
+                }
+                this.dataPicker = value;
+                OnPropertyChanged();
+            }
+        }
+
+        //declara o entry do preço da oferta
+        public string precoEntry;
+        public string PrecoEntry
+        {
+            get
+            {
+                return this.precoEntry;
+            }
+            set
+            {
+                if (Equals(value, this.precoEntry))
+                {
+                    return;
+                }
+                this.precoEntry = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+        private bool isBusy;
         public bool IsBusy
         {
             get { return isBusy; }
             set { isBusy = value; OnPropertyChanged(); }
-        }*/
+        }
 
         public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService, IDependencyService dependencyService)
         {
             _navigationService = navigationService;
             _inputAlertDialogService = inputAlertDialogService;
-            _azureServiceTipo = dependencyService.Get<TipoService>();
+            _azureServiceTipo = new TipoService();
+            _produtoService = new ProdutoService();
             
             TirarFotoCommand = new DelegateCommand(ExecuteTirarFotoCommandAsync);
             SelecionarImagemCommand = new DelegateCommand(ExecuteSelecionarImagemCommandAsync);
@@ -70,7 +169,7 @@ namespace SharePrice.ViewModels
             LimparCommand = new DelegateCommand(ExecuteLimparCommandAsync);
             SalvarCommand = new DelegateCommand(ExecuteSalvarCommandAsync);
 
-            //IsBusy = false;
+            IsBusy = false;
             
         }
 
@@ -122,25 +221,42 @@ namespace SharePrice.ViewModels
 
         private async void ExecuteLimparCommandAsync()
         {
-            var tipos = await _azureServiceTipo.GetTipos();
-            var num = tipos.Count();
-            var aaa = tipos.ToList();
+            ProdutoEntry = "";
+            LocalEntry = "";
+            PrecoEntry = "";            
         }
 
         private async void ExecuteAdicionarGeneroCommandAsync()
         {
+            if (IsBusy)
+                return;
+            IsBusy = true;
             var novoTipo = new Tipo()
             {
                 Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(                
                 "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo")
             };
             _azureServiceTipo.AddTipo(novoTipo);
+
+            IsBusy = false;
         }
 
         private async void ExecuteAdicionarProdutoCommandAsync()
         {
+            if (IsBusy)
+                return;
+            IsBusy = true;
+
             var novoProduto = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
                 "Adicionar produto", "Impressora HP, Notebook Acer", "Salvar", "Cancelar", "Insira um nome para este produto");
+
+            var produto = new Produto()
+            {
+                Nome = novoProduto
+            };
+
+            _produtoService.AddProduto(produto);
+            IsBusy = false;
         }
     }
 }

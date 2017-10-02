@@ -10,7 +10,7 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>84d3fc81-4443-4009-8bab-d9e6df058f1c</PackageIdentityName>
     <PackageIdentityPublisher>CN=kimmo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>4F3BFED72EC07A6B609DD4F2C98B9DD59AEA519046FC62E30A2B0ED2D376C6F0</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>84d3fc81-4443-4009-8bab-d9e6df058f1c_1.0.0.0_x86__rf90ahdgvxck2</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>84d3fc81-4443-4009-8bab-d9e6df058f1c_rf90ahdgvxck2!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-20T03:19:24.206</Modified>
+      <Modified>2017-09-30T05:11:33.761</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.exe">
       <PackagePath>entrypoint\SharePrice.UWP.exe</PackagePath>
-      <Modified>2017-08-20T03:19:23.197</Modified>
+      <Modified>2017-09-30T05:11:22.884</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\DryIoc.dll\2.10.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll">
       <PackagePath>DryIoc.dll</PackagePath>
@@ -50,6 +50,10 @@
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Microsoft.Azure.Mobile.Client\3.1.0\lib\netcore45\Microsoft.WindowsAzure.Mobile.dll">
       <PackagePath>Microsoft.WindowsAzure.Mobile.dll</PackagePath>
       <Modified>2017-01-05T19:11:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Microsoft.Azure.Mobile.Client.SQLiteStore\3.1.0\lib\portable-win+net45+wp8+wpa81+monotouch10+monoandroid10+xamarinios10\Microsoft.WindowsAzure.Mobile.SQLiteStore.dll">
+      <PackagePath>Microsoft.WindowsAzure.Mobile.SQLiteStore.dll</PackagePath>
+      <Modified>2017-01-05T19:11:18.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Microsoft.CSharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -131,6 +135,18 @@
       <PackagePath>Prism.Forms.dll</PackagePath>
       <Modified>2017-03-24T21:34:02.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.Platform.dll">
+      <PackagePath>Rg.Plugins.Popup.Platform.dll</PackagePath>
+      <Modified>2016-11-23T12:26:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.UWP.dll">
+      <PackagePath>Rg.Plugins.Popup.UWP.dll</PackagePath>
+      <Modified>2016-11-23T12:26:00.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Rg.Plugins.Popup\1.0.4\lib\uap10.0\Rg.Plugins.Popup.dll">
+      <PackagePath>Rg.Plugins.Popup.dll</PackagePath>
+      <Modified>2016-11-23T12:26:00.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\runtime.any.System.Collections\4.0.11\lib\netcore50\System.Collections.dll">
       <PackagePath>System.Collections.dll</PackagePath>
       <Modified>2016-06-12T02:13:24.000</Modified>
@@ -203,6 +219,10 @@
       <PackagePath>Microsoft.Win32.Primitives.dll</PackagePath>
       <Modified>2016-06-12T02:13:14.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\runtime.win.System.Console\4.0.0\runtimes\win\lib\netcore50\System.Console.dll">
+      <PackagePath>System.Console.dll</PackagePath>
+      <Modified>2016-06-12T02:13:24.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\runtime.win.System.Diagnostics.Debug\4.0.11\runtimes\win\lib\netcore50\System.Diagnostics.Debug.dll">
       <PackagePath>System.Diagnostics.Debug.dll</PackagePath>
       <Modified>2016-06-12T02:13:26.000</Modified>
@@ -234,6 +254,26 @@
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\runtime.win7.System.Private.Uri\4.0.2\runtimes\win\lib\netcore50\System.Private.Uri.dll">
       <PackagePath>System.Private.Uri.dll</PackagePath>
       <Modified>2016-07-01T18:48:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\SQLitePCLRaw.bundle_green\1.1.2\lib\uap10.0\SQLitePCLRaw.batteries_green.dll">
+      <PackagePath>SQLitePCLRaw.batteries_green.dll</PackagePath>
+      <Modified>2017-01-04T11:54:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\SQLitePCLRaw.bundle_green\1.1.2\lib\uap10.0\SQLitePCLRaw.batteries_v2.dll">
+      <PackagePath>SQLitePCLRaw.batteries_v2.dll</PackagePath>
+      <Modified>2017-01-04T11:54:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\SQLitePCLRaw.core\1.1.2\lib\uap10.0\SQLitePCLRaw.core.dll">
+      <PackagePath>SQLitePCLRaw.core.dll</PackagePath>
+      <Modified>2017-01-04T11:54:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\SQLitePCLRaw.lib.e_sqlite3.v140\1.1.2\runtimes\win10-x86\native\e_sqlite3.dll">
+      <PackagePath>e_sqlite3.dll</PackagePath>
+      <Modified>2017-01-04T11:55:12.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\SQLitePCLRaw.provider.e_sqlite3.uwp10\1.1.2\lib\uap10.0\SQLitePCLRaw.provider.e_sqlite3.dll">
+      <PackagePath>SQLitePCLRaw.provider.e_sqlite3.dll</PackagePath>
+      <Modified>2017-01-04T11:54:52.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\System.AppContext\4.1.0\lib\netcore50\System.AppContext.dll">
       <PackagePath>System.AppContext.dll</PackagePath>
@@ -411,6 +451,10 @@
       <PackagePath>System.Reflection.TypeExtensions.dll</PackagePath>
       <Modified>2016-06-12T02:14:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\System.Runtime.InteropServices.RuntimeInformation\4.0.0\runtimes\win\lib\netcore50\System.Runtime.InteropServices.RuntimeInformation.dll">
+      <PackagePath>System.Runtime.InteropServices.RuntimeInformation.dll</PackagePath>
+      <Modified>2016-06-12T02:14:28.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\System.Runtime.InteropServices.WindowsRuntime\4.0.1\lib\netcore50\System.Runtime.InteropServices.WindowsRuntime.dll">
       <PackagePath>System.Runtime.InteropServices.WindowsRuntime.dll</PackagePath>
       <Modified>2016-06-12T02:14:26.000</Modified>
@@ -531,6 +575,22 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T02:15:04.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.3\lib\UAP10\Plugin.Connectivity.Abstractions.dll">
+      <PackagePath>Plugin.Connectivity.Abstractions.dll</PackagePath>
+      <Modified>2017-09-27T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Connectivity\3.0.3\lib\UAP10\Plugin.Connectivity.dll">
+      <PackagePath>Plugin.Connectivity.dll</PackagePath>
+      <Modified>2017-09-27T11:58:10.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Media\2.6.2\lib\UAP10\Plugin.Media.Abstractions.dll">
+      <PackagePath>Plugin.Media.Abstractions.dll</PackagePath>
+      <Modified>2017-01-06T23:20:54.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugin.Media\2.6.2\lib\UAP10\Plugin.Media.dll">
+      <PackagePath>Plugin.Media.dll</PackagePath>
+      <Modified>2017-01-06T23:20:54.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xam.Plugins.Settings\2.5.4\lib\UAP10\Plugin.Settings.Abstractions.dll">
       <PackagePath>Plugin.Settings.Abstractions.dll</PackagePath>
       <Modified>2017-02-13T20:24:26.000</Modified>
@@ -539,116 +599,124 @@
       <PackagePath>Plugin.Settings.dll</PackagePath>
       <Modified>2017-02-13T20:24:26.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Core.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Core.dll">
       <PackagePath>Xamarin.Forms.Core.dll</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Platform.UAP.dll">
       <PackagePath>Xamarin.Forms.Platform.UAP.dll</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Platform.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Platform.dll">
       <PackagePath>Xamarin.Forms.Platform.dll</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Xaml.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\bin\Debug\SharePrice.dll">
       <PackagePath>SharePrice.dll</PackagePath>
-      <Modified>2017-08-20T03:19:19.778</Modified>
+      <Modified>2017-09-30T05:02:30.235</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
       <PackagePath>SharePrice.dll.config</PackagePath>
-      <Modified>2017-08-20T01:21:15.326</Modified>
+      <Modified>2017-09-30T04:14:55.366</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\add.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\add.png">
       <PackagePath>Assets\add.png</PackagePath>
-      <Modified>2017-08-20T00:38:42.813</Modified>
+      <Modified>2017-09-25T03:19:53.413</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\facebook.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\facebook.png">
       <PackagePath>Assets\facebook.png</PackagePath>
-      <Modified>2017-08-18T20:49:26.903</Modified>
+      <Modified>2017-09-25T03:19:53.414</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\google.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\gallery.png">
+      <PackagePath>Assets\gallery.png</PackagePath>
+      <Modified>2017-09-28T22:32:32.669</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\google.png">
       <PackagePath>Assets\google.png</PackagePath>
-      <Modified>2017-08-18T20:49:26.920</Modified>
+      <Modified>2017-09-25T03:19:53.416</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\logo.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
-      <Modified>2017-08-18T20:49:26.926</Modified>
+      <Modified>2017-09-25T03:19:53.418</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\notification.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\notification.png">
       <PackagePath>Assets\notification.png</PackagePath>
-      <Modified>2017-08-20T00:38:42.831</Modified>
+      <Modified>2017-09-25T03:19:53.420</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\user.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\photocamera.png">
+      <PackagePath>Assets\photocamera.png</PackagePath>
+      <Modified>2017-09-28T22:32:32.699</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>
-      <Modified>2017-08-20T00:38:42.838</Modified>
+      <Modified>2017-09-25T03:19:53.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2017-08-18T17:21:46.621</Modified>
+      <Modified>2017-09-25T03:19:53.398</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.627</Modified>
+      <Modified>2017-09-25T03:19:53.399</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.630</Modified>
+      <Modified>2017-09-25T03:19:53.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.632</Modified>
+      <Modified>2017-09-25T03:19:53.403</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.637</Modified>
+      <Modified>2017-09-25T03:19:53.404</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.639</Modified>
+      <Modified>2017-09-25T03:19:53.406</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-18T17:21:46.642</Modified>
+      <Modified>2017-09-25T03:19:53.410</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2017-08-18T17:21:46.649</Modified>
+      <Modified>2017-09-25T03:19:53.432</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.xr.xml">
       <PackagePath>SharePrice.UWP.xr.xml</PackagePath>
-      <Modified>2017-08-18T21:01:28.159</Modified>
+      <Modified>2017-09-25T03:19:56.184</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
       <Modified>2017-06-13T15:49:34.572</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Xamarin.Forms.Platform.UAP.xr.xml</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.3.193\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
-      <Modified>2017-01-31T13:27:52.000</Modified>
+      <Modified>2017-08-16T14:14:36.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-08-20T01:50:02.867</Modified>
+      <Modified>2017-09-30T05:11:31.241</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\SharePrice.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\SharePrice.UWP.exe">
       <PackagePath>SharePrice.UWP.exe</PackagePath>
-      <Modified>2017-08-20T03:19:24.194</Modified>
+      <Modified>2017-09-30T05:11:33.741</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

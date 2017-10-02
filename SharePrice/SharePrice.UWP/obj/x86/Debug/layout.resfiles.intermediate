@@ -2,10 +2,12 @@ WinMetadata\Windows.winmd
 e_sqlite3.dll
 Assets\add.png
 Assets\facebook.png
+Assets\gallery.png
 Assets\google.png
 Assets\LockScreenLogo.scale-200.png
 Assets\logo.png
 Assets\notification.png
+Assets\photocamera.png
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
