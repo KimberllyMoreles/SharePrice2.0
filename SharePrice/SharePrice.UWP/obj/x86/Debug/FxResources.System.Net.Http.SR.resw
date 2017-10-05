@@ -120,6 +120,9 @@
   <data name="net_http_content_no_concurrent_reads" xml:space="preserve">
     <value>The stream does not support concurrent read operations.</value>
   </data>
+  <data name="net_http_handler_nocontentlength" xml:space="preserve">
+    <value>The content length of the request content can't be determined. Either set TransferEncodingChunked to true, load content into buffer, or set AllowRequestContentBuffering to true.</value>
+  </data>
   <data name="net_http_unix_invalid_credential" xml:space="preserve">
     <value>The libcurl library in use ({0}) does not support different credentials for different authentication schemes.</value>
   </data>

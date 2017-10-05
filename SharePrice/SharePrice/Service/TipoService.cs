@@ -13,11 +13,11 @@ using Xamarin.Forms;
 
 namespace SharePrice.Service
 {
-    public class TipoService
+    public class TipoService<T>
     {
         
         public static MobileServiceClient _client = new MobileServiceClient(@"http://sharepricecross.azurewebsites.net");
-        private IMobileServiceSyncTable<Tipo> _tableTipo;
+        private IMobileServiceSyncTable<T> _tableTipo;
 
         const string dbPath = "SharePriceDB";
 
@@ -27,13 +27,13 @@ namespace SharePrice.Service
 
             var store = new MobileServiceSQLiteStore(dbPath);
 
-            store.DefineTable<Tipo>();
+            store.DefineTable<T>();
 
             _client.SyncContext.InitializeAsync(store);
-            _tableTipo = _client.GetSyncTable<Tipo>();
+            _tableTipo = _client.GetSyncTable<T>();
         }
 
-        public async void AddTipo(Tipo tipo)
+        public async void AddTipo(T tipo)
         {
             await _tableTipo.InsertAsync(tipo);
             await SyncAsync();
@@ -54,9 +54,9 @@ namespace SharePrice.Service
             }
         }
 
-        public async Task<IEnumerable<Tipo>> GetTipos()
+        public async Task<IEnumerable<T>> GetTipos()
         {
-            var empty = new Tipo[0];
+            var empty = new T[0];
 
 
             try

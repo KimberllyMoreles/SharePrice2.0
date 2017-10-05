@@ -15,23 +15,23 @@
 
                 <Button 
                         Command="{Binding TirarFotoCommand}"
-                        Style="{StaticResource TinyButtonAdd}">
+                        Style="{StaticResource TinyButton}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
-                                    Android="Resources/drawable/add.png"
-                                    iOS="Resources/add.png"
-                                    WinPhone="Assets/add.png" />
+                                    Android="Resources/drawable/imgcamera.png"
+                                    iOS="Resources/imgcamera.png"
+                                    WinPhone="Assets/imgcamera.png"/>
                     </Button.Image>
                 </Button>
 
                 <Button 
                         Command="{Binding SelecionarImagemCommand}"
-                        Style="{StaticResource TinyButtonAdd}">
+                        Style="{StaticResource TinyButton}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
-                                Android="Resources/drawable/add.png"
-                                iOS="Resources/add.png"
-                                WinPhone="Assets/add.png"/>
+                                Android="Resources/drawable/imggallery.png"
+                                iOS="Resources/imggallery.png"
+                                WinPhone="Assets/imggallery.png"/>
                     </Button.Image>
                 </Button>
 
@@ -40,7 +40,8 @@
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
                 <Entry Placeholder="Produto" 
-                       Style="{StaticResource PropriedadeGeralEntry}"/>
+                       Style="{StaticResource PropriedadeGeralEntry}"
+                       Text="{Binding ProdutoEntry}"/>
 
                 <Button Style="{StaticResource TinyButtonAdd}" 
                         Command="{Binding AdicionarProdutoCommand}">
@@ -76,7 +77,8 @@
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
                 <Entry Placeholder="Local de Venda"
-                       Style="{StaticResource PropriedadeGeralEntry}"/>
+                       Style="{StaticResource PropriedadeGeralEntry}"
+                       Text="{Binding LocalEntry}"/>
             
             </StackLayout>
 
@@ -87,7 +89,8 @@
                 </DatePicker>
             
                 <Entry Placeholder="Preço" 
-                       Style="{StaticResource PropriedadeGeralEntry}"/>
+                       Style="{StaticResource PropriedadeGeralEntry}"
+                       Text="{Binding PrecoEntry}"/>
             
             </StackLayout>
 

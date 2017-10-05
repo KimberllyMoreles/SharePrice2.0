@@ -1,4 +1,4 @@
-package md5a7903531ac28e2eb4c8576cdf2655bda;
+package md55acd92097db1193d6a1e7330cb14252a;
 
 
 public class ConnectivityChangeBroadcastReceiver
@@ -12,7 +12,7 @@ public class ConnectivityChangeBroadcastReceiver
 		__md_methods = 
 			"n_onReceive:(Landroid/content/Context;Landroid/content/Intent;)V:GetOnReceive_Landroid_content_Context_Landroid_content_Intent_Handler\n" +
 			"";
-		mono.android.Runtime.register ("Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=3.0.2.0, Culture=neutral, PublicKeyToken=null", ConnectivityChangeBroadcastReceiver.class, __md_methods);
+		mono.android.Runtime.register ("Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=3.0.3.0, Culture=neutral, PublicKeyToken=null", ConnectivityChangeBroadcastReceiver.class, __md_methods);
 	}
 
 
@@ -20,7 +20,7 @@ public class ConnectivityChangeBroadcastReceiver
 	{
 		super ();
 		if (getClass () == ConnectivityChangeBroadcastReceiver.class)
-			mono.android.TypeManager.Activate ("Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=3.0.2.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
+			mono.android.TypeManager.Activate ("Plugin.Connectivity.ConnectivityChangeBroadcastReceiver, Plugin.Connectivity, Version=3.0.3.0, Culture=neutral, PublicKeyToken=null", "", this, new java.lang.Object[] {  });
 	}
 
 

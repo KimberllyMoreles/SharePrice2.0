@@ -112,9 +112,10 @@
     <Content Include="Assets\add.png" />
     <Content Include="Assets\facebook.png" />
     <Content Include="Assets\google.png" />
+    <Content Include="Assets\imgcamera.png" />
+    <Content Include="Assets\imggallery.png" />
     <Content Include="Assets\logo.png" />
     <Content Include="Assets\notification.png" />
-    <Content Include="Assets\picture.png" />
     <Content Include="Assets\user.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />

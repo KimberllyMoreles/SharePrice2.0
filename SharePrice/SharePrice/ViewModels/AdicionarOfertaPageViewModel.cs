@@ -16,8 +16,8 @@ namespace SharePrice.ViewModels
 {
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
-        public TipoService _azureServiceTipo;
-        public ProdutoService _produtoService;
+        public TipoService<Tipo> _azureServiceTipo;
+        public TipoService<Produto> _produtoService;
         
         private INavigationService _navigationService;
         private readonly IInputAlertDialogService _inputAlertDialogService;
@@ -35,10 +35,7 @@ namespace SharePrice.ViewModels
         public ImageSource imagemOferta;
         public ImageSource ImagemOferta
         {
-            get
-            {
-                return this.imagemOferta;
-            }
+            get { return this.imagemOferta; }
             set
             {
                 if (Equals(value, this.imagemOferta))
@@ -54,10 +51,7 @@ namespace SharePrice.ViewModels
         public string produtoEntry;
         public string ProdutoEntry
         {
-            get
-            {
-                return this.produtoEntry;
-            }
+            get { return this.produtoEntry; }
             set
             {
                 if (Equals(value, this.produtoEntry))
@@ -73,10 +67,7 @@ namespace SharePrice.ViewModels
         public Picker tipoPicker;
         public Picker TipoPicker
         {
-            get
-            {
-                return this.tipoPicker;
-            }
+            get { return this.tipoPicker; }
             set
             {
                 if (Equals(value, this.tipoPicker))
@@ -92,10 +83,7 @@ namespace SharePrice.ViewModels
         public string localEntry;
         public string LocalEntry
         {
-            get
-            {
-                return this.localEntry;
-            }
+            get { return this.localEntry; }
             set
             {
                 if (Equals(value, this.localEntry))
@@ -111,10 +99,7 @@ namespace SharePrice.ViewModels
         public DatePicker dataPicker;
         public DatePicker DataPicker
         {
-            get
-            {
-                return this.dataPicker;
-            }
+            get { return this.dataPicker; }
             set
             {
                 if (Equals(value, this.dataPicker))
@@ -130,10 +115,7 @@ namespace SharePrice.ViewModels
         public string precoEntry;
         public string PrecoEntry
         {
-            get
-            {
-                return this.precoEntry;
-            }
+            get { return this.precoEntry; }
             set
             {
                 if (Equals(value, this.precoEntry))
@@ -147,18 +129,14 @@ namespace SharePrice.ViewModels
 
 
         private bool isBusy;
-        public bool IsBusy
-        {
-            get { return isBusy; }
-            set { isBusy = value; OnPropertyChanged(); }
-        }
+        public bool IsBusy { get { return isBusy; } set { isBusy = value; OnPropertyChanged(); }}
 
         public AdicionarOfertaPageViewModel(INavigationService navigationService, IInputAlertDialogService inputAlertDialogService, IDependencyService dependencyService)
         {
             _navigationService = navigationService;
             _inputAlertDialogService = inputAlertDialogService;
-            _azureServiceTipo = new TipoService();
-            _produtoService = new ProdutoService();
+            _azureServiceTipo = new TipoService<Tipo>();
+            _produtoService = new TipoService<Produto>();
             
             TirarFotoCommand = new DelegateCommand(ExecuteTirarFotoCommandAsync);
             SelecionarImagemCommand = new DelegateCommand(ExecuteSelecionarImagemCommandAsync);
@@ -251,7 +229,7 @@ namespace SharePrice.ViewModels
                 Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
                 "Adicionar Produto", "Impressora, Notebook", "Salvar", "Cancelar", "Insira um nome para este produto")
             };
-            _produtoService.AddProduto(novoProduto);
+            _produtoService.AddTipo(novoProduto);
             await _produtoService.SyncAsync();
 
             IsBusy = false;
