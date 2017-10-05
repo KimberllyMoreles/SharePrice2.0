@@ -166,7 +166,7 @@ namespace SharePrice.ViewModels
             AdicionarProdutoCommand = new DelegateCommand(ExecuteAdicionarProdutoCommandAsync);
             AdicionarGeneroCommand = new DelegateCommand(ExecuteAdicionarGeneroCommandAsync);
 
-            LimparCommand = new DelegateCommand(ExecuteLimparCommandAsync);
+            LimparCommand = new DelegateCommand(ExecuteLimparCommand);
             SalvarCommand = new DelegateCommand(ExecuteSalvarCommandAsync);
 
             IsBusy = false;
@@ -219,7 +219,7 @@ namespace SharePrice.ViewModels
             throw new NotImplementedException();
         }
 
-        private async void ExecuteLimparCommandAsync()
+        private void ExecuteLimparCommand()
         {
             ProdutoEntry = "";
             LocalEntry = "";
@@ -246,16 +246,14 @@ namespace SharePrice.ViewModels
             if (IsBusy)
                 return;
             IsBusy = true;
-
-            var novoProduto = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
-                "Adicionar produto", "Impressora HP, Notebook Acer", "Salvar", "Cancelar", "Insira um nome para este produto");
-
-            var produto = new Produto()
+            var novoProduto = new Produto()
             {
-                Nome = novoProduto
+                Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
+                "Adicionar Produto", "Impressora, Notebook", "Salvar", "Cancelar", "Insira um nome para este produto")
             };
+            _produtoService.AddProduto(novoProduto);
+            await _produtoService.SyncAsync();
 
-            _produtoService.AddProduto(produto);
             IsBusy = false;
         }
     }

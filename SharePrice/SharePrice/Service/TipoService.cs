@@ -36,6 +36,7 @@ namespace SharePrice.Service
         public async void AddTipo(Tipo tipo)
         {
             await _tableTipo.InsertAsync(tipo);
+            await SyncAsync();
         }
 
         public async Task SyncAsync()
