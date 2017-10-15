@@ -11,13 +11,17 @@ using SharePrice.Models;
 using SharePrice.Service;
 using Prism.Services;
 using Plugin.Media;
+using System.Collections.ObjectModel;
 
 namespace SharePrice.ViewModels
 {
     public class AdicionarOfertaPageViewModel : BaseViewModel
     {
-        public TipoService<Tipo> _azureServiceTipo;
-        public TipoService<Produto> _produtoService;
+        //public ObservableCollection<Tipo> Tipos { get; set; }
+
+        public TipoService _tipoService;
+        public ProdutoService _produtoService;
+       // public AzureService<Oferta> _ofertaService;
         
         private INavigationService _navigationService;
         private readonly IInputAlertDialogService _inputAlertDialogService;
@@ -64,17 +68,17 @@ namespace SharePrice.ViewModels
         }
 
         //declara o picker do tipo
-        public Picker tipoPicker;
-        public Picker TipoPicker
+        public ObservableCollection<Tipo> tipos;
+        public ObservableCollection<Tipo> Tipos
         {
-            get { return this.tipoPicker; }
+            get { return this.tipos; }
             set
             {
-                if (Equals(value, this.tipoPicker))
+                if (Equals(value, this.tipos))
                 {
                     return;
                 }
-                this.tipoPicker = value;
+                this.tipos = value;
                 OnPropertyChanged();
             }
         }
@@ -135,8 +139,10 @@ namespace SharePrice.ViewModels
         {
             _navigationService = navigationService;
             _inputAlertDialogService = inputAlertDialogService;
-            _azureServiceTipo = new TipoService<Tipo>();
-            _produtoService = new TipoService<Produto>();
+
+            _tipoService = new TipoService();            
+            _produtoService = new ProdutoService();
+            //_ofertaService = new AzureService<Oferta>();
             
             TirarFotoCommand = new DelegateCommand(ExecuteTirarFotoCommandAsync);
             SelecionarImagemCommand = new DelegateCommand(ExecuteSelecionarImagemCommandAsync);
@@ -146,6 +152,9 @@ namespace SharePrice.ViewModels
 
             LimparCommand = new DelegateCommand(ExecuteLimparCommand);
             SalvarCommand = new DelegateCommand(ExecuteSalvarCommandAsync);
+
+            Tipos = new ObservableCollection<Tipo>();
+            LoadTipos();
 
             IsBusy = false;
             
@@ -164,6 +173,23 @@ namespace SharePrice.ViewModels
                 });
             }
 
+        }
+
+        public async void LoadTipos()
+        {
+            var result = await _tipoService.GetTipos();
+
+            Tipos.Clear();
+
+            if (result.Count() != 0)
+            {
+                foreach (var item in result)
+                {
+                    Tipos.Add(item);
+                }
+            }
+
+            IsBusy = false;
         }
 
         private async void ExecuteTirarFotoCommandAsync()
@@ -194,7 +220,7 @@ namespace SharePrice.ViewModels
 
         private async void ExecuteSalvarCommandAsync()
         {
-            throw new NotImplementedException();
+           
         }
 
         private void ExecuteLimparCommand()
@@ -208,13 +234,16 @@ namespace SharePrice.ViewModels
         {
             if (IsBusy)
                 return;
+
             IsBusy = true;
+
             var novoTipo = new Tipo()
             {
                 Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(                
                 "Adicionar tipo", "Livros, Alimentos", "Salvar", "Cancelar", "Insira um nome para este tipo")
             };
-            _azureServiceTipo.AddTipo(novoTipo);
+
+            _tipoService.AddContact(novoTipo);           
 
             IsBusy = false;
         }
@@ -223,15 +252,18 @@ namespace SharePrice.ViewModels
         {
             if (IsBusy)
                 return;
+
             IsBusy = true;
+
             var novoProduto = new Produto()
             {
+                TipoId = "61f6b175b4424a528ddc7b6f298a12fa",
                 Nome = await _inputAlertDialogService.OpenCancellableTextInputAlertDialog(
                 "Adicionar Produto", "Impressora, Notebook", "Salvar", "Cancelar", "Insira um nome para este produto")
             };
-            _produtoService.AddTipo(novoProduto);
-            await _produtoService.SyncAsync();
 
+            _produtoService.AddContact(novoProduto);
+            
             IsBusy = false;
         }
     }

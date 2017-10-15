@@ -1,6 +1,6 @@
 ﻿<resources>
   <style name="Theme.Splash" parent="MyTheme.Base">
-    <item name="android:windowBackground">@drawable/logo</item>    
+    <item name="android:windowBackground">@drawable/splash</item>    
     <item name="android:windowNoTitle">true</item>
   </style>
   <style name="MyTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">

@@ -16,7 +16,7 @@ namespace SharePrice.ViewModels
     public class LoginPageViewModel : BaseViewModel
     {
         private INavigationService _navigationService;
-        AzureService _azureService;
+        LoginService _azureService;
 
         public Command LoginFacebookCommand { get; }
         public Command LoginGoogleCommand { get; }
@@ -24,7 +24,7 @@ namespace SharePrice.ViewModels
         public LoginPageViewModel(INavigationService navigationService, IDependencyService dependencyService)
         {
             _navigationService = navigationService;
-            _azureService = dependencyService.Get<AzureService>();
+            _azureService = dependencyService.Get<LoginService>();
 
             LoginFacebookCommand = new Command(async () => await ExecuteLoginFacebookCommandAsync());
             LoginGoogleCommand = new Command(async () => await ExecuteLoginGoogleCommandAsync());

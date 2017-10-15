@@ -15,27 +15,42 @@ namespace SharePrice.Service
 {
     public class ProdutoService
     {
-        
-        public static MobileServiceClient _client = new MobileServiceClient(@"http://sharepricecross.azurewebsites.net");
-        private IMobileServiceSyncTable<Produto> _tableProduto;
 
-        const string dbPath = "SharePriceDB";
+        private IMobileServiceClient _client;
+        private IMobileServiceSyncTable<Produto> _table;
+        const string dbPath = "produtoDb";
+        private const string serviceUri = "http://sharepricecross.azurewebsites.net";
 
         public ProdutoService()
         {
-            //_client = new MobileServiceClient(ApplicationURL);
-
+            _client = new MobileServiceClient(serviceUri);
             var store = new MobileServiceSQLiteStore(dbPath);
-
             store.DefineTable<Produto>();
 
             _client.SyncContext.InitializeAsync(store);
-            _tableProduto = _client.GetSyncTable<Produto>();
+            _table = _client.GetSyncTable<Produto>();
         }
 
-        public async void AddProduto(Produto produto)
+        public async Task<IEnumerable<Produto>> GetProdutos()
         {
-            await _tableProduto.InsertAsync(produto);
+            var empty = new Produto[0];
+            try
+            {
+                if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
+                    await SyncAsync();
+
+                return await _table.ToEnumerableAsync();
+            }
+            catch (Exception ex)
+            {
+                return empty;
+            }
+        }
+
+        public async void AddContact(Produto produto)
+        {
+            await _table.InsertAsync(produto);
+            await SyncAsync();
         }
 
         public async Task SyncAsync()
@@ -44,8 +59,9 @@ namespace SharePrice.Service
             try
             {
                 await _client.SyncContext.PushAsync();
-                await _tableProduto.PullAsync("allProdutos", _tableProduto.CreateQuery());
+                await _table.PullAsync("allProdutos", _table.CreateQuery());                
             }
+
             catch (MobileServicePushFailedException pushEx)
             {
                 if (pushEx.PushResult != null)
@@ -53,22 +69,10 @@ namespace SharePrice.Service
             }
         }
 
-        public async Task<IEnumerable<Produto>> GetProdutos()
+
+        public async Task CleanData()
         {
-            var empty = new Produto[0];
-
-
-            try
-            {
-                if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
-                    await SyncAsync();
-
-                return await _tableProduto.ToEnumerableAsync();
-            }
-            catch (Exception ex)
-            {
-                return empty;
-            }
+            await _table.PurgeAsync("allProdutos", _table.CreateQuery(), new System.Threading.CancellationToken());
         }
     }
 }

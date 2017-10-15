@@ -13,29 +13,43 @@ using Xamarin.Forms;
 
 namespace SharePrice.Service
 {
-    public class TipoService<T>
+    public class TipoService
     {
-        
-        public static MobileServiceClient _client = new MobileServiceClient(@"http://sharepricecross.azurewebsites.net");
-        private IMobileServiceSyncTable<T> _tableTipo;
 
-        const string dbPath = "SharePriceDB";
+        private IMobileServiceClient _client;
+        private IMobileServiceSyncTable<Tipo> _table;
+        const string dbPath = "tipoDb";
+        private const string serviceUri = "http://sharepricecross.azurewebsites.net";
 
         public TipoService()
         {
-            //_client = new MobileServiceClient(ApplicationURL);
-
+            _client = new MobileServiceClient(serviceUri);
             var store = new MobileServiceSQLiteStore(dbPath);
-
-            store.DefineTable<T>();
+            store.DefineTable<Tipo>();
 
             _client.SyncContext.InitializeAsync(store);
-            _tableTipo = _client.GetSyncTable<T>();
+            _table = _client.GetSyncTable<Tipo>();
         }
 
-        public async void AddTipo(T tipo)
+        public async Task<IEnumerable<Tipo>> GetTipos()
         {
-            await _tableTipo.InsertAsync(tipo);
+            var empty = new Tipo[0];
+            try
+            {
+                if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
+                    await SyncAsync();
+
+                return await _table.ToEnumerableAsync();
+            }
+            catch (Exception ex)
+            {
+                return empty;
+            }
+        }
+
+        public async void AddContact(Tipo tipo)
+        {
+            await _table.InsertAsync(tipo);
             await SyncAsync();
         }
 
@@ -45,8 +59,9 @@ namespace SharePrice.Service
             try
             {
                 await _client.SyncContext.PushAsync();
-                await _tableTipo.PullAsync("allTipos", _tableTipo.CreateQuery());
+                await _table.PullAsync("allTipos", _table.CreateQuery());                
             }
+
             catch (MobileServicePushFailedException pushEx)
             {
                 if (pushEx.PushResult != null)
@@ -54,22 +69,10 @@ namespace SharePrice.Service
             }
         }
 
-        public async Task<IEnumerable<T>> GetTipos()
+
+        public async Task CleanData()
         {
-            var empty = new T[0];
-
-
-            try
-            {
-                if (Plugin.Connectivity.CrossConnectivity.Current.IsConnected)
-                    await SyncAsync();
-
-                return await _tableTipo.ToEnumerableAsync();
-            }
-            catch (Exception ex)
-            {
-                return empty;
-            }
+            await _table.PurgeAsync("allTipos", _table.CreateQuery(), new System.Threading.CancellationToken());
         }
     }
 }

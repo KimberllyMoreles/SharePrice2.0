@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace SharePrice.ViewModels
 {
-    public class UserPageViewModel : BindableBase
+    public class UserPageViewModel : BaseViewModel
     {
         public UserPageViewModel()
         {

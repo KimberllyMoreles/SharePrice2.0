@@ -48,13 +48,15 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Models\Oferta.cs" />
     <Compile Include="Models\Produto.cs" />
+    <Compile Include="Models\Teste.cs" />
     <Compile Include="Models\Tipo.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Service\AzureService.cs" />
+    <Compile Include="Service\LoginService.cs" />
     <Compile Include="Service\InputAlertDialogService.cs" />
-    <Compile Include="Service\ProdutoService.cs" />
+    <Compile Include="Service\OfertaService.cs" />
     <Compile Include="Service\TipoService.cs" />
+    <Compile Include="Service\ProdutoService.cs" />
     <Compile Include="ViewModels\AdicionarOfertaPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
     <Compile Include="ViewModels\InformationPageViewModel.cs" />

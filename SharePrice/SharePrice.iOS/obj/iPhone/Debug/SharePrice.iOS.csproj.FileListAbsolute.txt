@@ -106,3 +106,4 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\obj\iPhone\Debug\SharePrice.iOS.csproj.SharePrice.iOS.exe.config
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\obj\iPhone\Debug\SharePrice.iOS.exe
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\obj\iPhone\Debug\SharePrice.iOS.pdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.iOS\bin\iPhone\Debug\SharePrice.dll.mdb

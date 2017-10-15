@@ -9,9 +9,9 @@
         
         <StackLayout Style="{StaticResource ConteudoFormatado}">
         
-            <Image Source="{Binding ImagemOferta}" WidthRequest="300" HeightRequest="120"/>
+            <Image Source="{Binding ImagemOferta}" WidthRequest="220" HeightRequest="150" BackgroundColor="Gray" />
 
-            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+            <StackLayout Style="{StaticResource StackLayoutHorizontal}">
 
                 <Button 
                         Command="{Binding TirarFotoCommand}"
@@ -58,7 +58,9 @@
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
                 <Picker Title="Selecione um tipo" 
-                        Style="{StaticResource PropriedadeGeralPicker}">   
+                        Style="{StaticResource PropriedadeGeralPicker}"
+                        ItemsSource="{Binding Tipos}"
+                        ItemDisplayBinding="{Binding Nome}">   
                 
                 </Picker>
             

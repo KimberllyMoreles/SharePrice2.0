@@ -4,5 +4,34 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.UserPage">
-  
+    <ScrollView>
+        <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+
+            <Entry Placeholder="Nome" 
+                           Style="{StaticResource PropriedadeGeralEntry}"
+                           Text="{Binding Nome}"/>
+
+            <Button Style="{StaticResource TinyButtonAdd}" 
+                            Command="{Binding AdicionarProdutoCommand}">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                        Android="Resources/drawable/user-silhouette.png"
+                                        iOS="Resources/user-silhouette.png"
+                                        WinPhone="Assets/user-silhouette.png"/>
+                </Button.Image>
+            </Button>
+
+        </StackLayout>
+
+        <ListView ItemsSource="{Binding Produtos}"
+                  IsRefreshing="{Binding IsBusy}"
+                  IsPullToRefreshEnabled="True"
+                  RefreshCommand="{Binding RefreshCommand}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Nome}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </ScrollView>
 </ContentPage>
