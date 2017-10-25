@@ -194,6 +194,8 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\list.png
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\imgcamera.png
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\imggallery.png
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\splash.jpg
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\usersilhouette.png
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\R.cs.flag
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\uploadflags.txt
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\bin\Debug\SharePrice.dll.mdb
@@ -210,5 +212,3 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Core.dll.mdb
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\android\assets\Xamarin.Forms.Xaml.dll.mdb
-C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\splash.jpg
-C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.Droid\obj\Debug\res\drawable\user-silhouette.png

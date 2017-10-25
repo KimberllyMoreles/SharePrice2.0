@@ -15,7 +15,7 @@ namespace SharePrice.Models
         public string Id { get; set; }
 
         [JsonProperty("nome")]
-        public string Nome { get; set; }
+        public string NomeT { get; set; }
         
         [Version]
         private string Versao;

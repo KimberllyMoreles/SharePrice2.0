@@ -4,9 +4,71 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.ListPage">
-    <StackLayout HorizontalOptions="Center" VerticalOptions="Start">
-        <StackLayout Style="{StaticResource StackLayoutHorizontal}" VerticalOptions="Start">
-            
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="list" RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition />
+                                    <RowDefinition />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Label Text="{Binding ProdutoId}" Grid.Row="0" Grid.Column="0"/>
+                                <Button Text="Produto" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="{Binding Preco}" Grid.Row="1" Grid.Column="0"/>
+                                <Button Text="Preco" Grid.Row="1" Grid.Column="1"/>
+                            </Grid>
+                            <!--<StackLayout Style="{StaticResource CellStyle}">
+                                <Image BackgroundColor="Gray" />
+                                <Label Text="{Binding ProdutoId}"/>
+                                <Label Text="{Binding Preco}" />
+                                <Button Command="{Binding TirarFotoCommand}"
+                                    Style="{StaticResource TinyButton}">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource"
+                                                Android="Resources/drawable/imgcamera.png"
+                                                iOS="Resources/imgcamera.png"
+                                                WinPhone="Assets/imgcamera.png"/>
+                                    </Button.Image>
+                                </Button>
+
+                                <Button Command="{Binding SelecionarImagemCommand}"
+                                    Style="{StaticResource TinyButton}">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource"
+                                                Android="Resources/drawable/imggallery.png"
+                                                iOS="Resources/imggallery.png"
+                                                WinPhone="Assets/imggallery.png"/>
+                                    </Button.Image>
+                                </Button>
+                            </StackLayout>
+                            <Frame Padding="0,0,0,3">
+                                <Frame.Content>
+                                    <Frame Padding="15,15,15,15"   OutlineColor="Gray" BackgroundColor="White">
+                                        <Frame.Content>
+                                            <StackLayout Padding="20,0,0,0"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                                                <Label Text="{Binding Produto}"
+                           FontFamily="OpenSans-Light"
+                           FontSize="9"
+                           TextColor="#69add1"/>
+                                            </StackLayout>
+
+                                        </Frame.Content>
+
+                                    </Frame>
+                                </Frame.Content>
+
+                            </Frame>-->
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
         </StackLayout>
-    </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

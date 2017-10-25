@@ -6,6 +6,7 @@ using SharePrice.Service;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -56,16 +57,42 @@ namespace SharePrice.Service
         public async Task SyncAsync()
         {
             ReadOnlyCollection<MobileServiceTableOperationError> syncErrors = null;
+
             try
             {
-                await _client.SyncContext.PushAsync();
-                await _table.PullAsync("allProdutos", _table.CreateQuery());                
+                await this._client.SyncContext.PushAsync();
+
+                await this._table.PullAsync(
+                    "allTodoItems",
+                    this._table.CreateQuery());
+            }
+            catch (MobileServicePushFailedException exc)
+            {
+                if (exc.PushResult != null)
+                {
+                    syncErrors = exc.PushResult.Errors;
+                }
             }
 
-            catch (MobileServicePushFailedException pushEx)
+            // Simple error/conflict handling.
+            if (syncErrors != null)
             {
-                if (pushEx.PushResult != null)
-                    syncErrors = pushEx.PushResult.Errors;
+                foreach (var error in syncErrors)
+                {
+                    if (error.OperationKind == MobileServiceTableOperationKind.Update && error.Result != null)
+                    {
+                        //Update failed, reverting to server's copy.
+                        await error.CancelAndUpdateItemAsync(error.Result);
+                    }
+                    else
+                    {
+                        // Discard local change.
+                        await error.CancelAndDiscardItemAsync();
+                    }
+
+                    Debug.WriteLine(@"Error executing sync operation. Item: {0} ({1}). Operation discarded.",
+                        error.TableName, error.Item["id"]);
+                }
             }
         }
 

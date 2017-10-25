@@ -37,44 +37,48 @@
 
             </StackLayout>
 
-            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
-                <Entry Placeholder="Produto" 
-                       Style="{StaticResource PropriedadeGeralEntry}"
-                       Text="{Binding ProdutoEntry}"/>
+            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+
+                <Picker Title="Selecione um tipo" 
+                    Style="{StaticResource PropriedadeGeralPicker}"
+                    ItemsSource="{Binding Tipos}"
+                    ItemDisplayBinding="{Binding NomeT}" 
+                    SelectedIndex="{Binding IndexTipo}"/>
+
+                <Button Style="{StaticResource TinyButtonAdd}"
+                        Command="{Binding AdicionarTipoCommand}">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                    Android="Resources/drawable/add.png"
+                                    iOS="Resources/add.png"
+                                    WinPhone="Assets/add.png" />
+                    </Button.Image>
+                </Button>
+
+            </StackLayout>
+
+
+            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+
+                <Picker Title="Selecione um produto" 
+                    Style="{StaticResource PropriedadeGeralPicker}"
+                    ItemsSource="{Binding Produtos}"
+                    ItemDisplayBinding="{Binding NomeP}" 
+                    SelectedIndex="{Binding IndexProduto}" />
 
                 <Button Style="{StaticResource TinyButtonAdd}" 
-                        Command="{Binding AdicionarProdutoCommand}">
+                    Command="{Binding AdicionarProdutoCommand}">
                     <Button.Image>
                         <OnPlatform x:TypeArguments="FileImageSource"
-                                    Android="Resources/drawable/add.png"
-                                    iOS="Resources/add.png"
-                                    WinPhone="Assets/add.png"/>
+                            Android="Resources/drawable/add.png"
+                            iOS="Resources/add.png"
+                            WinPhone="Assets/add.png"/>
                     </Button.Image>
                 </Button>
-            
-            </StackLayout>
 
-            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
-            
-                <Picker Title="Selecione um tipo" 
-                        Style="{StaticResource PropriedadeGeralPicker}"
-                        ItemsSource="{Binding Tipos}"
-                        ItemDisplayBinding="{Binding Nome}">   
-                
-                </Picker>
-            
-                <Button Style="{StaticResource TinyButtonAdd}"
-                        Command="{Binding AdicionarGeneroCommand}">
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                    Android="Resources/drawable/add.png"
-                                    iOS="Resources/add.png"
-                                    WinPhone="Assets/add.png"/>
-                    </Button.Image>
-                </Button>
-            
             </StackLayout>
+            
 
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
@@ -86,14 +90,22 @@
 
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
             
-                <DatePicker Style="{StaticResource PropriedadeGeralDatePicker}">
-                
-                </DatePicker>
+                <DatePicker Style="{StaticResource PropriedadeGeralDatePicker}"
+                            Date="{Binding DataInicioPicker}" />
             
                 <Entry Placeholder="Preço" 
                        Style="{StaticResource PropriedadeGeralEntry}"
                        Text="{Binding PrecoEntry}"/>
             
+            </StackLayout>
+
+            <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+
+                <DatePicker Style="{StaticResource PropriedadeGeralDatePicker}"
+                            Date="{Binding DataFimPicker}"/>
+
+                <Switch IsToggled="{Binding DestaqueSwitch}"/>
+
             </StackLayout>
 
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">

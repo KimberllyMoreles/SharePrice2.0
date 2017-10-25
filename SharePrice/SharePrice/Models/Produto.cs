@@ -15,7 +15,7 @@ namespace SharePrice.Models
         public string Id { get; set; }
 
         [JsonProperty("nome")]
-        public string Nome { get; set; }
+        public string NomeP { get; set; }
 
         [JsonProperty("tipoId")]
         public string TipoId { get; set; }

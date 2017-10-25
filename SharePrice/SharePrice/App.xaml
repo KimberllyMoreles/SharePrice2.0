@@ -46,6 +46,18 @@
         <Setter Property="HorizontalOptions" 
                 Value="FillAndExpand"/>
       </Style>
+      
+      <Style x:Key="CellStyle" 
+             TargetType="StackLayout">
+        <Setter Property="Padding">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="Thickness"
+                        Android="20"
+                        iOS="20"
+                        WinPhone="25"/>
+          </Setter.Value>
+        </Setter>
+      </Style>
 
       <!--Estilo para a orientação, margens, largura e altura para os social button-->
       <Style x:Key="TinyButton" 
@@ -142,15 +154,29 @@
 
       <Style x:Key="PropriedadeGeralDatePicker" 
              TargetType="DatePicker">
+        
         <Setter Property="HorizontalOptions" 
                 Value="FillAndExpand"/>
+        
         <Setter Property="Margin" 
                 Value="5"/>
+        
+        <Setter Property="WidthRequest">
+          <Setter.Value>
+            <OnPlatform x:TypeArguments="x:Double"
+                        Android="160"
+                        iOS="160"
+                        WinPhone="320"/>
+          </Setter.Value>
+        </Setter>
+
+        
       </Style>
       
       <!--Estilo dos botões da aplicação-->
       <Style x:Key="EstiloBotao" 
              TargetType="Button">
+        
         <Setter Property="BackgroundColor" 
                 Value="{StaticResource VerdeMedio}"/>
         
@@ -162,6 +188,7 @@
         
         <Setter Property="Margin" 
                 Value="5"/>
+        
       </Style>
 
     </ResourceDictionary>

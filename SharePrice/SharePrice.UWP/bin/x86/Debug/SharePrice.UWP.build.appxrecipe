@@ -496,6 +496,9 @@
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\notification.png">
       <PackagePath>Assets\notification.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\usersilhouette.png">
+      <PackagePath>Assets\usersilhouette.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>
     </AppxPackagedFile>
