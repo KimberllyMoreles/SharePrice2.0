@@ -6,7 +6,12 @@
              x:Class="SharePrice.Views.ListPage">
     <ContentPage.Content>
         <StackLayout>
-            <ListView x:Name="list" RowHeight="100">
+            <ListView Style="{StaticResource CellStyle}" 
+                      ItemsSource="{Binding Ofertas}"
+                      IsRefreshing="{Binding IsBusy}"
+                      IsPullToRefreshEnabled="True"
+                      RefreshCommand="{Binding RefreshCommand}"
+                      RowHeight="150">    
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
@@ -14,15 +19,31 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
                                     <RowDefinition />
+                                    <RowDefinition />
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition />
                                     <ColumnDefinition />
+                                    <ColumnDefinition />
                                 </Grid.ColumnDefinitions>
-                                <Label Text="{Binding ProdutoId}" Grid.Row="0" Grid.Column="0"/>
-                                <Button Text="Produto" Grid.Row="0" Grid.Column="1"/>
+                                <Label Text="{Binding ProdutoId}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                                 <Label Text="{Binding Preco}" Grid.Row="1" Grid.Column="0"/>
-                                <Button Text="Preco" Grid.Row="1" Grid.Column="1"/>
+                                <Button Grid.Row="2" Grid.Column="1">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource"
+                                                Android="Resources/drawable/imggallery.png"
+                                                iOS="Resources/imggallery.png"
+                                                WinPhone="Assets/imggallery.png"/>
+                                    </Button.Image>
+                                </Button>
+                                <Button Grid.Row="2" Grid.Column="2">
+                                    <Button.Image>
+                                        <OnPlatform x:TypeArguments="FileImageSource"
+                                                Android="Resources/drawable/imggallery.png"
+                                                iOS="Resources/imggallery.png"
+                                                WinPhone="Assets/imggallery.png"/>
+                                    </Button.Image>
+                                </Button>
                             </Grid>
                             <!--<StackLayout Style="{StaticResource CellStyle}">
                                 <Image BackgroundColor="Gray" />

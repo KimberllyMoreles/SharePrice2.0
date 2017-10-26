@@ -47,14 +47,15 @@
                 Value="FillAndExpand"/>
       </Style>
       
-      <Style x:Key="CellStyle" 
-             TargetType="StackLayout">
-        <Setter Property="Padding">
+      <!--Estilo para a listview-->
+      <Style x:Key="CellStyle"
+             TargetType="ListView">
+        <Setter Property="Margin">
           <Setter.Value>
             <OnPlatform x:TypeArguments="Thickness"
-                        Android="20"
-                        iOS="20"
-                        WinPhone="25"/>
+                        Android="25"
+                        iOS="25"
+                        WinPhone="75"/>
           </Setter.Value>
         </Setter>
       </Style>
