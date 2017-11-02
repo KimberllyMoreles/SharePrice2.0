@@ -231,9 +231,6 @@ namespace SharePrice.ViewModels
             Produtos = new ObservableCollection<Produto>();
 
             Sincroniza();
-                        
-            LoadTipos();
-            LoadProdutos();
 
             DataInicioPicker = DateTime.Today;
             DataFimPicker = DateTime.Today;
@@ -247,6 +244,9 @@ namespace SharePrice.ViewModels
         {
             await _tipoService.SyncAsync();
             await _produtoService.SyncAsync();
+
+            LoadTipos();
+            LoadProdutos();
         }
 
         private async void ExecuteSelecionarImagemCommandAsync()

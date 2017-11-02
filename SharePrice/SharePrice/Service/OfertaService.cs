@@ -46,7 +46,7 @@ namespace SharePrice.Service
                 return empty;
             }
         }
-
+        
         public async void AddContact(Oferta oferta)
         {
             await _table.InsertAsync(oferta);

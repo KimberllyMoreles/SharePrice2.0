@@ -46,6 +46,7 @@
       <DependentUpon>TextInputView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Helpers\Settings.cs" />
+    <Compile Include="Models\ProdutoOfertas.cs" />
     <Compile Include="Models\Oferta.cs" />
     <Compile Include="Models\Produto.cs" />
     <Compile Include="Models\Teste.cs" />
