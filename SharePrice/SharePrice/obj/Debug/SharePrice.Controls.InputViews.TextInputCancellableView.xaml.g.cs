@@ -11,8 +11,8 @@
 namespace SharePrice.Controls.InputViews {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\Sha" +
-        "rePrice\\Controls\\InputViews\\TextInputCancellableView.xaml")]
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\ShareP" +
+        "rice\\Controls\\InputViews\\TextInputCancellableView.xaml")]
     public partial class TextInputCancellableView : global::Xamarin.Forms.ContentView {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "0.0.0.0")]

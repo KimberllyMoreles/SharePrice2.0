@@ -26451,16 +26451,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
       "projectName": "SharePrice.UWP",
-      "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice.UWP\\project.json",
+      "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice\\SharePrice.csproj": {
-              "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice2.0\\SharePrice\\SharePrice\\SharePrice.csproj"
+            "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj": {
+              "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj"
             }
           }
         }

@@ -31,9 +31,9 @@
                                 <Button Grid.Row="2" Grid.Column="1">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource"
-                                                Android="Resources/drawable/imggallery.png"
-                                                iOS="Resources/imggallery.png"
-                                                WinPhone="Assets/imggallery.png"/>
+                                                Android="Resources/drawable/linegraph.png"
+                                                iOS="Resources/linegraph.png"
+                                                WinPhone="Assets/linegraph.png"/>
                                     </Button.Image>
                                 </Button>
                                 <Button Grid.Row="2" Grid.Column="2">

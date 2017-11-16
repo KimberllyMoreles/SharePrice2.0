@@ -10,22 +10,22 @@
     <PackageArchitecture>x86</PackageArchitecture>
     <PackageIdentityName>84d3fc81-4443-4009-8bab-d9e6df058f1c</PackageIdentityName>
     <PackageIdentityPublisher>CN=kimmo</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\obj\x86\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType></RemoteDeploymentType>
     <PackageRegistrationPath></PackageRegistrationPath>
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\AppX</LayoutDir>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.exe">
       <PackagePath>entrypoint\SharePrice.UWP.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\DryIoc.dll\2.10.1\lib\portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1\DryIoc.dll">
@@ -469,70 +469,73 @@
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Xaml.dll">
       <PackagePath>Xamarin.Forms.Xaml.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\bin\Debug\SharePrice.dll">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll">
       <PackagePath>SharePrice.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\bin\Debug\SharePrice.dll.config">
       <PackagePath>SharePrice.dll.config</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\add.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\add.png">
       <PackagePath>Assets\add.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\facebook.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\facebook.png">
       <PackagePath>Assets\facebook.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\google.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\google.png">
       <PackagePath>Assets\google.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\imgcamera.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\imgcamera.png">
       <PackagePath>Assets\imgcamera.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\imggallery.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\imggallery.png">
       <PackagePath>Assets\imggallery.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\logo.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\linegraph.png">
+      <PackagePath>Assets\linegraph.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\logo.png">
       <PackagePath>Assets\logo.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\notification.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\notification.png">
       <PackagePath>Assets\notification.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\usersilhouette.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\usersilhouette.png">
       <PackagePath>Assets\usersilhouette.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\user.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\user.png">
       <PackagePath>Assets\user.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.xr.xml">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\SharePrice.UWP.xr.xml">
       <PackagePath>SharePrice.UWP.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
@@ -544,11 +547,11 @@
     <AppxPackagedFile Include="C:\Users\kimmo\.nuget\packages\Xamarin.Forms\2.3.4.267\lib\uap10.0\Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml">
       <PackagePath>Xamarin.Forms.Platform.UAP\Properties\Xamarin.Forms.Platform.UAP.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\SharePrice.UWP.exe">
+    <AppxPackagedFile Include="C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\Core\SharePrice.UWP.exe">
       <PackagePath>SharePrice.UWP.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>

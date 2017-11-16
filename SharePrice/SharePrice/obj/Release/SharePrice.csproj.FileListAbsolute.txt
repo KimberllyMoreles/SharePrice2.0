@@ -60,3 +60,6 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\Sh
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\obj\Release\SharePrice.Views.NotificationPage.xaml.g.cs
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\obj\Release\SharePrice.dll
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice2.0\SharePrice\SharePrice\obj\Release\SharePrice.pdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Views.ListPage.xaml.g.cs
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Views.UserPage.xaml.g.cs
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Release\SharePrice.Views.NotificationPage.xaml.g.cs

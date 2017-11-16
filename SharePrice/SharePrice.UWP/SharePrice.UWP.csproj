@@ -114,6 +114,7 @@
     <Content Include="Assets\google.png" />
     <Content Include="Assets\imgcamera.png" />
     <Content Include="Assets\imggallery.png" />
+    <Content Include="Assets\linegraph.png" />
     <Content Include="Assets\logo.png" />
     <Content Include="Assets\notification.png" />
     <Content Include="Assets\usersilhouette.png" />
