@@ -10,6 +10,8 @@ namespace SharePrice.Models
 {
     public class ProdutoOfertas
     {
+        public string IdProduto { get; set; }
+
         public string Produto { get; set; }
         
         public double Preco { get; set; }

@@ -31,6 +31,7 @@ namespace SharePrice
             Container.RegisterTypeForNavigation<ListPage>();
             Container.RegisterTypeForNavigation<UserPage>();
             Container.RegisterTypeForNavigation<NotificationPage>();
+            Container.RegisterTypeForNavigation<GraphPage>();
         }
     }
 }

@@ -60,6 +60,7 @@
     <Compile Include="Service\ProdutoService.cs" />
     <Compile Include="ViewModels\AdicionarOfertaPageViewModel.cs" />
     <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\GraphPageViewModel.cs" />
     <Compile Include="ViewModels\InformationPageViewModel.cs" />
     <Compile Include="ViewModels\InitialPageViewModel.cs" />
     <Compile Include="ViewModels\ListPageViewModel.cs" />
@@ -67,6 +68,9 @@
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\NotificationPageViewModel.cs" />
     <Compile Include="ViewModels\UserPageViewModel.cs" />
+    <Compile Include="Views\GraphPage.xaml.cs">
+      <DependentUpon>GraphPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\NotificationPage.xaml.cs">
       <DependentUpon>NotificationPage.xaml</DependentUpon>
     </Compile>
@@ -235,6 +239,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\NotificationPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\GraphPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

@@ -132,3 +132,4 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Views.NotificationPage.xaml.g.cs
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.dll
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.pdb
+C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice\obj\Debug\SharePrice.Views.GraphPage.xaml.g.cs

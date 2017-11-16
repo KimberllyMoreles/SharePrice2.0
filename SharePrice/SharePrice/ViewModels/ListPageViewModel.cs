@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace SharePrice.ViewModels
@@ -20,10 +21,13 @@ namespace SharePrice.ViewModels
         private ProdutoService _produtoService;
 
         public ObservableCollection<Oferta> Ofertas { get; set; }
+        public ObservableCollection<Oferta> OfertasGraph { get; set; }
         public ObservableCollection<Produto> Produtos { get; set; }
         public ObservableCollection<ProdutoOfertas> ProdutoOfertas { get; set; }
 
         public DelegateCommand RefreshCommand { get; set; }
+
+        public ICommand OpenGraphCommand { get; set; }
 
 
         public ListPageViewModel(INavigationService navigationService)
@@ -33,9 +37,13 @@ namespace SharePrice.ViewModels
             _produtoService = new ProdutoService();
 
             Ofertas = new ObservableCollection<Oferta>();
+            OfertasGraph = new ObservableCollection<Oferta>();
             Produtos = new ObservableCollection<Produto>();
             ProdutoOfertas = new ObservableCollection<ProdutoOfertas>();
+
             RefreshCommand = new DelegateCommand(CarregarOfertasAsync);
+
+            OpenGraphCommand = new Command<ProdutoOfertas>(OpenGraphAsync);
 
             Sincroniza();
 
@@ -81,12 +89,13 @@ namespace SharePrice.ViewModels
 
             var query = from oferta in Ofertas
                         join produto in Produtos on oferta.ProdutoId equals produto.Id
-                        select new { ProdutoNome = produto.NomeP, Preco = oferta.Preco, Data = oferta.DataInicio };
+                        select new { ProdutoNome = produto.NomeP, Preco = oferta.Preco, Data = oferta.DataInicio, IdProduto = produto.Id };
 
             foreach (var produtoOferta in query)
             {
                 ProdutoOfertas item = new ProdutoOfertas
                 {
+                    IdProduto = produtoOferta.IdProduto,
                     Produto = produtoOferta.ProdutoNome,
                     Preco = produtoOferta.Preco,
                     DataInicio = produtoOferta.Data
@@ -96,6 +105,23 @@ namespace SharePrice.ViewModels
             }
 
             IsBusy = false;
+        }
+
+        private async void OpenGraphAsync(ProdutoOfertas produtoOferta)
+        {
+            var query = from oferta in Ofertas
+                        where oferta.ProdutoId == produtoOferta.IdProduto
+                        select oferta;
+
+            foreach (var item in query)
+            {
+                OfertasGraph.Add(item);
+            }
+
+            var navigationParams = new NavigationParameters();
+            navigationParams.Add("ofertas", OfertasGraph);
+            navigationParams.Add("produto", produtoOferta.Produto);
+            await _navigationService?.NavigateAsync("GraphPage", navigationParams);
         }
     }
 }

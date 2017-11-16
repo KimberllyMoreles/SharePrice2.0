@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
-             x:Class="SharePrice.Views.ListPage">
+             x:Class="SharePrice.Views.ListPage"
+             x:Name="ListPage">
     <ContentPage.Content>
         <StackLayout>
             <ListView Style="{StaticResource CellStyle}" 
@@ -28,7 +29,9 @@
                                 </Grid.ColumnDefinitions>
                                 <Label Text="{Binding Produto}" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"/>
                                 <Label Text="{Binding Preco}" Grid.Row="1" Grid.Column="0"/>
-                                <Button Grid.Row="2" Grid.Column="1">
+                                <Button Grid.Row="2" Grid.Column="1"
+                                        Command="{Binding Path=BindingContext.OpenGraphCommand, Source={x:Reference ListPage}}"
+                                        CommandParameter="{Binding .}">
                                     <Button.Image>
                                         <OnPlatform x:TypeArguments="FileImageSource"
                                                 Android="Resources/drawable/linegraph.png"
@@ -45,47 +48,6 @@
                                     </Button.Image>
                                 </Button>
                             </Grid>
-                            <!--<StackLayout Style="{StaticResource CellStyle}">
-                                <Image BackgroundColor="Gray" />
-                                <Label Text="{Binding ProdutoId}"/>
-                                <Label Text="{Binding Preco}" />
-                                <Button Command="{Binding TirarFotoCommand}"
-                                    Style="{StaticResource TinyButton}">
-                                    <Button.Image>
-                                        <OnPlatform x:TypeArguments="FileImageSource"
-                                                Android="Resources/drawable/imgcamera.png"
-                                                iOS="Resources/imgcamera.png"
-                                                WinPhone="Assets/imgcamera.png"/>
-                                    </Button.Image>
-                                </Button>
-
-                                <Button Command="{Binding SelecionarImagemCommand}"
-                                    Style="{StaticResource TinyButton}">
-                                    <Button.Image>
-                                        <OnPlatform x:TypeArguments="FileImageSource"
-                                                Android="Resources/drawable/imggallery.png"
-                                                iOS="Resources/imggallery.png"
-                                                WinPhone="Assets/imggallery.png"/>
-                                    </Button.Image>
-                                </Button>
-                            </StackLayout>
-                            <Frame Padding="0,0,0,3">
-                                <Frame.Content>
-                                    <Frame Padding="15,15,15,15"   OutlineColor="Gray" BackgroundColor="White">
-                                        <Frame.Content>
-                                            <StackLayout Padding="20,0,0,0"  Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-                                                <Label Text="{Binding Produto}"
-                           FontFamily="OpenSans-Light"
-                           FontSize="9"
-                           TextColor="#69add1"/>
-                                            </StackLayout>
-
-                                        </Frame.Content>
-
-                                    </Frame>
-                                </Frame.Content>
-
-                            </Frame>-->
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
