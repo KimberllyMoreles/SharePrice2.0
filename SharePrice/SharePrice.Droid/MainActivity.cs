@@ -27,8 +27,9 @@ namespace SharePrice.Droid
             //await CrossMedia.Current.Initialize();
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            OxyPlot.Xamarin.Forms.Platform.Android.PlotViewRenderer.Init();
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
-            
+
             LoadApplication(new App(new AndroidInitializer()));
         }
     }

@@ -2,7 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
+             xmlns:oxy="clr-namespace:OxyPlot.Xamarin.Forms;assembly=OxyPlot.Xamarin.Forms"  
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.GraphPage">
-  
+    <AbsoluteLayout>
+        <oxy:PlotView Model="{Binding AreaModel}"  
+                  AbsoluteLayout.LayoutBounds="20,0,.9,.9"  
+                  AbsoluteLayout.LayoutFlags="WidthProportional,HeightProportional" />
+    </AbsoluteLayout> 
 </ContentPage>

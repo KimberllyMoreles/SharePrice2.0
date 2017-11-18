@@ -6,6 +6,7 @@
     "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
     "NETStandard.Library": "2.0.0",
     "Newtonsoft.Json": "10.0.3",
+    "OxyPlot.Xamarin.Forms": "1.0.0",
     "Prism.Core": "6.3.0",
     "Prism.DryIoc.Forms": "6.3.0.1",
     "Prism.Forms": "6.3.0",

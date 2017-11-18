@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OxyPlot.Xamarin.Forms.Platform.UWP</name>
+    </assembly>
+    <members>
+        <member name="T:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer">
+            <summary>
+            Provides a custom <see cref="T:OxyPlot.Xamarin.Forms.PlotView" /> renderer for UWP projects with xamarin forms. 
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer.#cctor">
+            <summary>
+            Initializes static members of the <see cref="T:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer"/> class.
+            </summary>
+        </member>
+        <member name="M:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer.Init">
+            <summary>
+            Initializes the renderer.
+            </summary>
+            <remarks>This method must be called before a <see cref="T:PlotView" /> is used.</remarks>
+        </member>
+        <member name="M:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer.OnElementChanged(Xamarin.Forms.Platform.UWP.ElementChangedEventArgs{OxyPlot.Xamarin.Forms.PlotView})">
+            <summary>
+            Raises the element changed event.
+            </summary>
+            <param name="e">The event arguments.</param>
+        </member>
+        <member name="M:OxyPlot.Xamarin.Forms.Platform.UWP.PlotViewRenderer.OnElementPropertyChanged(System.Object,System.ComponentModel.PropertyChangedEventArgs)">
+            <summary>
+            Raises the element property changed event.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The event arguments.</param>
+        </member>
+    </members>
+</doc>

@@ -28,6 +28,7 @@ namespace SharePrice.iOS
             LoadApplication(new App(new iOSInitializer()));
 
             Microsoft.WindowsAzure.MobileServices.CurrentPlatform.Init();
+            OxyPlot.Xamarin.Forms.Platform.iOS.PlotViewRenderer.Init();
 
             return base.FinishedLaunching(app, options);
         }

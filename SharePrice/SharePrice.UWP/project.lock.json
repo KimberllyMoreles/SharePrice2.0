@@ -448,6 +448,42 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        }
+      },
       "Prism.Core/6.3.0": {
         "type": "package",
         "compile": {
@@ -3046,6 +3082,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -5743,6 +5815,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -8482,6 +8590,42 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        }
+      },
       "Prism.Core/6.3.0": {
         "type": "package",
         "compile": {
@@ -11186,6 +11330,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -13931,6 +14111,42 @@
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
         }
       },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        }
+      },
       "Prism.Core/6.3.0": {
         "type": "package",
         "compile": {
@@ -16635,6 +16851,42 @@
         },
         "runtime": {
           "lib/netstandard1.3/Newtonsoft.Json.dll": {}
+        }
+      },
+      "OxyPlot.Core/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll": {}
+        }
+      },
+      "OxyPlot.Windows/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Core": "[1.0.0]"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Windows.dll": {}
+        }
+      },
+      "OxyPlot.Xamarin.Forms/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "OxyPlot.Windows": "1.0.0",
+          "Xamarin.Forms": "2.3.3.180"
+        },
+        "compile": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll": {},
+          "lib/uap10.0/OxyPlot.Xamarin.Forms.dll": {}
         }
       },
       "Prism.Core/6.3.0": {
@@ -19684,6 +19936,102 @@
         "newtonsoft.json.10.0.3.nupkg.sha512",
         "newtonsoft.json.nuspec",
         "tools/install.ps1"
+      ]
+    },
+    "OxyPlot.Core/1.0.0": {
+      "sha512": "4CdN5a7xg7rdXAn0MqofQQV7Y2mt0e8nch3Zko5XSien2eTZo+lkkX9IjMhipMiwu2/SQnggS3ZMzvhEThRnIw==",
+      "type": "package",
+      "path": "oxyplot.core/1.0.0",
+      "files": [
+        "AUTHORS",
+        "CHANGELOG.md",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "lib/net40-client/OxyPlot.XML",
+        "lib/net40-client/OxyPlot.dll",
+        "lib/net40-client/OxyPlot.pdb",
+        "lib/net40/OxyPlot.XML",
+        "lib/net40/OxyPlot.dll",
+        "lib/net40/OxyPlot.pdb",
+        "lib/net45/OxyPlot.dll",
+        "lib/net45/OxyPlot.pdb",
+        "lib/net45/OxyPlot.xml",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid1+MonoTouch1+Xamarin.iOS10/OxyPlot.xml",
+        "lib/sl5/OxyPlot.XML",
+        "lib/sl5/OxyPlot.dll",
+        "lib/sl5/OxyPlot.pdb",
+        "oxyplot.core.1.0.0.nupkg.sha512",
+        "oxyplot.core.nuspec"
+      ]
+    },
+    "OxyPlot.Windows/1.0.0": {
+      "sha512": "XPhP/tr2VeLdLUBql55iLhaOR3srj3fETzcKpUQ93qfE+gualH7ha3UVnGhwbAvBPgwILj2HtUQbxJA2IB8phA==",
+      "type": "package",
+      "path": "oxyplot.windows/1.0.0",
+      "files": [
+        "AUTHORS",
+        "CHANGELOG.md",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows.dll",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows.pdb",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows.pri",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows.xml",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows/OxyPlot.Windows.xr.xml",
+        "lib/portable-windows8+wpa81/OxyPlot.Windows/Themes/Generic.xbf",
+        "lib/uap10.0/OxyPlot.Windows.dll",
+        "lib/uap10.0/OxyPlot.Windows.pdb",
+        "lib/uap10.0/OxyPlot.Windows.pri",
+        "lib/uap10.0/OxyPlot.Windows/OxyPlot.Windows.xr.xml",
+        "lib/uap10.0/OxyPlot.Windows/Properties/OxyPlot.Windows10.rd.xml",
+        "lib/uap10.0/OxyPlot.Windows/Themes/Generic.xbf",
+        "oxyplot.windows.1.0.0.nupkg.sha512",
+        "oxyplot.windows.nuspec"
+      ]
+    },
+    "OxyPlot.Xamarin.Forms/1.0.0": {
+      "sha512": "GKqCS5K2CvwVizIFPjw4WYPQAo+PND8QLsAArf6UtOO8UFe17AD5SbwNDl48RRSN/4lpUMV1UNsd8vJDlUdXYA==",
+      "type": "package",
+      "path": "oxyplot.xamarin.forms/1.0.0",
+      "files": [
+        "AUTHORS",
+        "CHANGELOG.md",
+        "CONTRIBUTORS",
+        "LICENSE",
+        "README.md",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.Platform.Android.XML",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.Platform.Android.dll",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.Platform.Android.pdb",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.dll",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.pdb",
+        "lib/MonoAndroid10/OxyPlot.Xamarin.Forms.xml",
+        "lib/Xamarin.iOS10/OxyPlot.Xamarin.Forms.Platform.iOS.XML",
+        "lib/Xamarin.iOS10/OxyPlot.Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/OxyPlot.Xamarin.Forms.dll",
+        "lib/Xamarin.iOS10/OxyPlot.Xamarin.Forms.pdb",
+        "lib/Xamarin.iOS10/OxyPlot.Xamarin.Forms.xml",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10/OxyPlot.Xamarin.Forms.XML",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10/OxyPlot.Xamarin.Forms.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10/OxyPlot.Xamarin.Forms.pdb",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.XML",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.dll",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.pdb",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.Platform.UWP.pri",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.dll",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.pdb",
+        "lib/uap10.0/OxyPlot.Xamarin.Forms.xml",
+        "lib/wp80/OxyPlot.Xamarin.Forms.Platform.WP8.XML",
+        "lib/wp80/OxyPlot.Xamarin.Forms.Platform.WP8.dll",
+        "lib/wp80/OxyPlot.Xamarin.Forms.Platform.WP8.pdb",
+        "lib/wp80/OxyPlot.Xamarin.Forms.XML",
+        "lib/wp80/OxyPlot.Xamarin.Forms.dll",
+        "lib/wp80/OxyPlot.Xamarin.Forms.pdb",
+        "oxyplot.xamarin.forms.1.0.0.nupkg.sha512",
+        "oxyplot.xamarin.forms.nuspec"
       ]
     },
     "Prism.Core/6.3.0": {
@@ -26435,6 +26783,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.2.2",
       "NETStandard.Library >= 2.0.0",
       "Newtonsoft.Json >= 10.0.3",
+      "OxyPlot.Xamarin.Forms >= 1.0.0",
       "Prism.Core >= 6.3.0",
       "Prism.DryIoc.Forms >= 6.3.0.1",
       "Prism.Forms >= 6.3.0",
@@ -26451,16 +26800,16 @@
   },
   "project": {
     "restore": {
-      "projectUniqueName": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
       "projectName": "SharePrice.UWP",
-      "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
-      "projectJsonPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\project.json",
+      "projectPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\SharePrice.UWP.csproj",
+      "projectJsonPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice.UWP\\project.json",
       "projectStyle": "ProjectJson",
       "frameworks": {
         "uap10.0": {
           "projectReferences": {
-            "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj": {
-              "projectPath": "C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj"
+            "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj": {
+              "projectPath": "C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\SharePrice\\SharePrice.csproj"
             }
           }
         }
@@ -26473,6 +26822,7 @@
       "Microsoft.NETCore.UniversalWindowsPlatform": "5.2.2",
       "NETStandard.Library": "2.0.0",
       "Newtonsoft.Json": "10.0.3",
+      "OxyPlot.Xamarin.Forms": "1.0.0",
       "Prism.Core": "6.3.0",
       "Prism.DryIoc.Forms": "6.3.0.1",
       "Prism.Forms": "6.3.0",
