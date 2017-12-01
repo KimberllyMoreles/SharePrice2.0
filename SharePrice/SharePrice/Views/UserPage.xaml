@@ -4,223 +4,213 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="SharePrice.Views.UserPage">
+    
     <StackLayout Style="{StaticResource ConteudoFormatado}">
         <StackLayout Style="{StaticResource ConteudoFormatado}">
+            
             <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
-
-                <Entry Placeholder="Nome" 
+                <Image Source="{Binding ImagemPerfil}"/>
+                <Label Text="{Binding NomePerfil}"/>
+            </StackLayout>            
+            
+            <ScrollView>
+                <StackLayout Style="{StaticResource ConteudoFormatado}">
+                    <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-
-        </StackLayout>
-        </StackLayout>
-        <ScrollView>
-
-            <StackLayout Style="{StaticResource ConteudoFormatado}">
-                <StackLayout Style="{StaticResource StackLayoutHorizontalFill}">
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
                                             Android="Resources/drawable/usersilhouette.png"
                                             iOS="Resources/usersilhouette.png"
                                             WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
+                            </Button.Image>
+                        </Button>
+                        <Entry Placeholder="NomePerfil" 
                                Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
+                               Text="{Binding NomePerfil}"/>
 
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                            Android="Resources/drawable/usersilhouette.png"
-                                            iOS="Resources/usersilhouette.png"
-                                            WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
-                <Entry Placeholder="Nome" 
-                               Style="{StaticResource PropriedadeGeralEntry}"
-                               Text="{Binding Nome}"/>
-
-                <Button >
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                            Android="Resources/drawable/usersilhouette.png"
-                                            iOS="Resources/usersilhouette.png"
-                                            WinPhone="Assets/usersilhouette.png"/>
-                    </Button.Image>
-                </Button>
+                        <Button >
+                            <Button.Image>
+                                <OnPlatform x:TypeArguments="FileImageSource"
+                                    Android="Resources/drawable/usersilhouette.png"
+                                    iOS="Resources/usersilhouette.png"
+                                    WinPhone="Assets/usersilhouette.png"/>
+                            </Button.Image>
+                        </Button>
+                    </StackLayout>
                 </StackLayout>
-            </StackLayout>
-        </ScrollView>
+            </ScrollView>
         </StackLayout>
+    </StackLayout>
 </ContentPage>

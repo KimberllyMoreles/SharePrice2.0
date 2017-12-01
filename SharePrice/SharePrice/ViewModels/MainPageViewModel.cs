@@ -30,9 +30,9 @@ namespace SharePrice.ViewModels
             _ea = eventAggregator;
             _navigationService = navigationService;
 
-            /*if (!Settings.IsLoggedIn)
-                _navigationService?.NavigateAsync("InitialPage");*/
-
+            if (!Settings.IsLoggedIn)
+                _navigationService?.NavigateAsync("InitialPage");
+                
         }
 
         public override void OnNavigatingTo(Prism.Navigation.NavigationParameters parameters)
@@ -44,6 +44,6 @@ namespace SharePrice.ViewModels
                 this.Titulo = parameters["parametro"].ToString();*/
         }
 
-
+        
     }
 }

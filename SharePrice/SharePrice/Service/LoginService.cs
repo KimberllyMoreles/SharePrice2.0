@@ -11,12 +11,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using SharePrice.Authentication;
 using SharePrice.Service;
+using SharePrice.Models;
 
 [assembly: Dependency(typeof(LoginService))]
 namespace SharePrice.Service
 {
     public class LoginService
     {
+        List<User> identities = null;
         public static readonly string AppUrl = "http://sharepricecross.azurewebsites.net";
         public MobileServiceClient Client { get; set; } = null;
 
@@ -33,40 +35,44 @@ namespace SharePrice.Service
             }
         }
 
-        public async Task<bool> LoginAsync(string redeSocial)
+        public async Task<bool> LoginAsync()
         {
             Initialize();
 
             var auth = DependencyService.Get<IAuthenticate>();
-            var user = new MobileServiceUser("");
+            var user = await auth.AuthenticateAsync(Client, MobileServiceAuthenticationProvider.Facebook);
 
-            if (redeSocial == "Facebook")
-            {
-                user = await auth.AuthenticateAsync(Client, MobileServiceAuthenticationProvider.Facebook);
-            }
-            else
-            {
-                user = await auth.AuthenticateAsync(Client, MobileServiceAuthenticationProvider.Google);
-            }
-            
+            Settings.AuthToken = string.Empty;
+            Settings.UserId = string.Empty;
 
-            if (user == null || user == new MobileServiceUser(""))
+            if (user == null)
             {
-                Settings.AuthToken = string.Empty;
-                Settings.UserId = string.Empty;
-
                 Device.BeginInvokeOnMainThread(async () =>
                 {
-                    await App.Current.MainPage.DisplayAlert("Erro", "Não foi possível efetuar login, tente novamente.", "OK");
+                    await Application.Current.MainPage.DisplayAlert("Erro", "Não foi possível efetuar login, tente novamente.", "OK");
                 });
                 return false;
             }
             else
             {
-                Settings.AuthToken = user.MobileServiceAuthenticationToken;
-                Settings.UserId = user.UserId;
-            }
+                identities = await Client.InvokeApiAsync<List<User>>("/.auth/me");
+                var name = identities[0].UserClaims.Find(c => c.Type.Equals("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname")).Value;
 
+                var userToken = identities[0].AccessToken;
+
+                var requestUrl = $"https://graph.facebook.com/v2.9/me/?fields=picture&access_token={userToken}";
+
+                var httpClient = new HttpClient();
+
+                var userJson = await httpClient.GetStringAsync(requestUrl);
+
+                var facebookProfile = JsonConvert.DeserializeObject<FacebookProfile>(userJson);
+
+                Settings.UserName = name;
+                Settings.UserImage = facebookProfile.Picture.Data.Url;
+                
+
+            }
             return true;
         }
     }

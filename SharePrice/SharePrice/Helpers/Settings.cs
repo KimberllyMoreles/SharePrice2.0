@@ -31,7 +31,23 @@ namespace SharePrice.Helpers
             set { AppSettings.AddOrUpdateValue<string>(UserIdKey, value); }
         }
 
-        public static bool IsLoggedIn => !string.IsNullOrWhiteSpace(UserId);
+        const string UserNameKey = "userName";
+        static readonly string UserNameDefault = string.Empty;
+        public static string UserName
+        {
+            get { return AppSettings.GetValueOrDefault<string>(UserNameKey, UserNameDefault); }
+            set { AppSettings.AddOrUpdateValue<string>(UserNameKey, value); }
+        }
+
+        const string UserImageKey = "userImage";
+        static readonly string UserImageDefault = string.Empty;
+        public static string UserImage
+        {
+            get { return AppSettings.GetValueOrDefault<string>(UserImageKey, UserImageDefault); }
+            set { AppSettings.AddOrUpdateValue<string>(UserImageKey, value); }
+        }
+
+        public static bool IsLoggedIn => !string.IsNullOrWhiteSpace(UserName);
 
     }
 }

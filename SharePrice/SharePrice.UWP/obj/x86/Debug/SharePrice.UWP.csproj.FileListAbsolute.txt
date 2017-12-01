@@ -530,3 +530,13 @@ C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\Share
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\Plugin.Connectivity.pri.xml
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\Xamarin.Forms.Platform.UAP.pri.xml
 C:\Users\kimmo\Documents\Visual Studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Windows.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Windows.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Xamarin.Forms.Platform.UWP.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Xamarin.Forms.Platform.UWP.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Xamarin.Forms.dll
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\bin\x86\Debug\OxyPlot.Xamarin.Forms.pdb
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\OxyPlot.Windows.pri.xml
+C:\Users\kimmo\documents\visual studio 2017\Projects\SharePrice\SharePrice\SharePrice.UWP\obj\x86\Debug\OxyPlot.Xamarin.Forms.Platform.UWP.pri.xml

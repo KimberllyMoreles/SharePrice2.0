@@ -11,7 +11,7 @@
 namespace SharePrice {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\ShareP" +
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\ShareP" +
         "rice\\App.xaml")]
     public partial class App : global::Prism.DryIoc.PrismApplication {
         

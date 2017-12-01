@@ -11,7 +11,7 @@
 namespace SharePrice.Views {
     
     
-    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\Documents\\Visual Studio 2017\\Projects\\SharePrice\\SharePrice\\ShareP" +
+    [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("C:\\Users\\kimmo\\documents\\visual studio 2017\\Projects\\SharePrice\\SharePrice\\ShareP" +
         "rice\\Views\\ListPage.xaml")]
     public partial class ListPage : global::Xamarin.Forms.ContentPage {
         

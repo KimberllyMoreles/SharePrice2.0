@@ -258,10 +258,10 @@
     <AndroidResource Include="Resources\drawable\splash.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\usersilhouette.png" />
+    <AndroidResource Include="Resources\drawable\linegraph.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\linegraph.png" />
+    <AndroidResource Include="Resources\drawable\usersilhouette.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

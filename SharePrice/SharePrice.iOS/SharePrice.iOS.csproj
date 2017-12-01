@@ -252,10 +252,10 @@
     <BundleResource Include="Resources\imggallery.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\usersilhouette.png" />
+    <BundleResource Include="Resources\linegraph.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\linegraph.png" />
+    <BundleResource Include="Resources\usersilhouette.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

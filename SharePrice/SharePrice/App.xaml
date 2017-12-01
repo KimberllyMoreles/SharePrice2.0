@@ -96,6 +96,7 @@
           </Setter.Value>
         </Setter>
       </Style>
+
       
       <!--Estilo para a orientação, margens, largura e altura para os botões de adição do formulário-->
       <Style x:Key="TinyButtonAdd" 

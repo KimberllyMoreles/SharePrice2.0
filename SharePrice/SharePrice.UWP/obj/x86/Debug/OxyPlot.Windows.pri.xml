@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<PriInfo>
+	<ResourceMap name="OxyPlot.Windows" version="1.0" primary="true">
+		<Qualifiers/>
+		<ResourceMapSubtree name="Files">
+			<ResourceMapSubtree name="OxyPlot.Windows">
+				<NamedResource name="OxyPlot.Windows.xr.xml" uri="ms-resource://OxyPlot.Windows/Files/OxyPlot.Windows/OxyPlot.Windows.xr.xml">
+					<Candidate type="Path">
+						<Value>OxyPlot.Windows\OxyPlot.Windows.xr.xml</Value>
+					</Candidate>
+				</NamedResource>
+				<ResourceMapSubtree name="Properties">
+					<NamedResource name="OxyPlot.Windows10.rd.xml" uri="ms-resource://OxyPlot.Windows/Files/OxyPlot.Windows/Properties/OxyPlot.Windows10.rd.xml">
+						<Candidate type="Path">
+							<Value>OxyPlot.Windows\Properties\OxyPlot.Windows10.rd.xml</Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+				<ResourceMapSubtree name="Themes">
+					<NamedResource name="Generic.xbf" uri="ms-resource://OxyPlot.Windows/Files/OxyPlot.Windows/Themes/Generic.xbf">
+						<Candidate type="EmbeddedData">
+							<Base64Value>[Embedded Binary Data]</Base64Value>
+						</Candidate>
+					</NamedResource>
+				</ResourceMapSubtree>
+			</ResourceMapSubtree>
+		</ResourceMapSubtree>
+	</ResourceMap>
+</PriInfo>

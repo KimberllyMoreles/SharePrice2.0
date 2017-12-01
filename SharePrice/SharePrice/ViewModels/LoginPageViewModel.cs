@@ -32,7 +32,7 @@ namespace SharePrice.ViewModels
 
         private async Task ExecuteLoginFacebookCommandAsync()
         {
-            if (IsBusy || !(await LoginAsync("Facebook")))
+            if (IsBusy || !(await LoginAsync()))
                 return;
             else
             {
@@ -43,7 +43,7 @@ namespace SharePrice.ViewModels
 
         private async Task ExecuteLoginGoogleCommandAsync()
         {
-            if (IsBusy || !(await LoginAsync("Google")))
+            if (IsBusy || !(await LoginAsync()))
                 return;
             else
             {
@@ -52,12 +52,12 @@ namespace SharePrice.ViewModels
 
         }
 
-        public Task<bool> LoginAsync(string redeSocial)
+        public Task<bool> LoginAsync()
         {
             if (Settings.IsLoggedIn)
                 return Task.FromResult(true);
 
-            return _azureService.LoginAsync(redeSocial);
+            return _azureService.LoginAsync();
         }
     }
 }
